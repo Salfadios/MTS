@@ -1,0 +1,6 @@
+<div class = "ticket-small">
+	<p class = "ticket-line">
+		<label>Time:</label>
+		<%=@time%>
+	</p>
+</div>

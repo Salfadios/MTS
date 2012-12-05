@@ -1,0 +1,3 @@
+<script type = "text/template" id = "table_td_template">
+	<td id = <%=id%> colspan = <%=colspan%>></td>
+</script>

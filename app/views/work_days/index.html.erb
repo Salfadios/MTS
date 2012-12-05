@@ -1,0 +1,27 @@
+<h1>Listing work_days</h1>
+
+<table>
+  <tr>
+    <th>Doctor full name</th>
+    <th>Time</th>
+    <th>Duration</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @work_days.each do |work_day| %>
+  <tr>
+    <td><%= work_day.doctor_full_name %></td>
+    <td><%= work_day.time %></td>
+    <td><%= work_day.duration %></td>
+    <td><%= link_to 'Show', work_day %></td>
+    <td><%= link_to 'Edit', edit_work_day_path(work_day) %></td>
+    <td><%= link_to 'Destroy', work_day, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Work day', new_work_day_path %>

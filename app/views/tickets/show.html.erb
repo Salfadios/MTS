@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Doctor name:</b>
+  <%= @ticket.doctor_name %>
+</p>
+
+<p>
+  <b>User name:</b>
+  <%= @ticket.user_name %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @ticket.time %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @ticket.state %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= @ticket.duration %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @ticket.date %>
+</p>
+
+
+<%= link_to 'Edit', edit_ticket_path(@ticket) %> |
+<%= link_to 'Back', tickets_path %>

@@ -1,0 +1,3 @@
+<script type = "text/template" id = "table_head_template">
+	<td colspan = "4" ><%=time_work%></td>
+</script>

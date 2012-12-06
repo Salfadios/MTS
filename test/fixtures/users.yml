@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fio: MyString
+  login: MyString
+  status_id: 1
+  password: MyString
+  last_login_date: MyString
+
+two:
+  fio: MyString
+  login: MyString
+  status_id: 1
+  password: MyString
+  last_login_date: MyString

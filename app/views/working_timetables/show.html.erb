@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Doctor:</b>
+  <%= @working_timetable.doctor_id %>
+</p>
+
+<p>
+  <b>Working time json hash:</b>
+  <%= @working_timetable.working_time_json_hash %>
+</p>
+
+
+<%= link_to 'Edit', edit_working_timetable_path(@working_timetable) %> |
+<%= link_to 'Back', working_timetables_path %>

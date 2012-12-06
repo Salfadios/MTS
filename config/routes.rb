@@ -1,4 +1,19 @@
 Mts::Application.routes.draw do
+  resources :users_statuses
+
+
+  resources :ticket_statuses
+
+
+  resources :specializations
+
+
+  resources :users
+
+
+  resources :working_timetables
+
+
   root to: "main#index"
   resources :work_days
 

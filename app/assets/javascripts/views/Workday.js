@@ -4,9 +4,8 @@ MTS.Views.WorkDayView = Backbone.View.extend({
 	el_tr : $('#tablebody'),
 	initialize : function()
 	{
-		var days = new MTS.Collections.WorkDayCollection(),
-		day = new MTS.Models.WorkDay();
-		days.on("reset", this.render, this); 
+		//var days = new MTS.Collections.WorkDayCollection(),
+		//days.on("reset", this.render, this); 
 		this.render();      
 	},
 	render : function()
@@ -40,6 +39,7 @@ MTS.Views.WorkDayView = Backbone.View.extend({
 			time[0]++;
 			day.set('ticket_time', time[0]+':' + time[1]);
 			day.set('ticket_t', time[0]+'' + time[1]);
+			console.log(day.get('ticket_time'));
 		}
 		day.set('span', sp);
 		$(this.el_tr).append(this.template_tr(day.toJSON()));

@@ -6,7 +6,7 @@ MTS.Models.WorkDay = Backbone.Model.extend(
 		duration : 60,
 		from : "13:00",
 		to : "16:00",
-		ticket_time : "08:00",
+		ticket_time : "8:00",
 		doc_id : 1,
 		data : "Mon",
 		specialization_id : 1,

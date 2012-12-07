@@ -2,7 +2,7 @@ MTS.Models.WorkDay = Backbone.Model.extend(
 {
 	defaults: 
 	{
-		fio : "Ivanov",
+		doc_fio : "Ivanov",
 		duration : 60,
 		from : "13:00",
 		to : "16:00",

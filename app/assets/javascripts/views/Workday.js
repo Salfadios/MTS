@@ -1,7 +1,7 @@
 MTS.Views.WorkDayView = Backbone.View.extend({
 	template_tr : JST["TemplateTr"],
 	template_span : JST["TimetableTicket"],
-	el_tr : $('#tablebody'),
+	el_tr : "#tablebody",
 	initialize : function()
 	{
 		//var days = new MTS.Collections.WorkDayCollection(),
@@ -13,7 +13,7 @@ MTS.Views.WorkDayView = Backbone.View.extend({
 		var sp = '';
 		var time = day.get('ticket_time').split(':');
 		var from = day.get('from').split(':');
-           var to = day.get('to').split(':');				
+        var to = day.get('to').split(':');				
 		for(j = 0; j <= 10; j++)
 		{
 			time[1] = 0;
@@ -37,11 +37,11 @@ MTS.Views.WorkDayView = Backbone.View.extend({
 				time[1] = parseInt(time[1]) + duration;
 			}
 			time[0]++;
-			day.set('ticket_time', time[0]+':' + time[1]);
-			day.set('ticket_t', time[0]+'' + time[1]);
-			console.log(day.get('ticket_time'));
+			day.set('ticket_time', time[0] + ':' + time[1]);
+			day.set('ticket_t', time[0] + '' + time[1]);
 		}
 		day.set('span', sp);
-		$(this.el_tr).append(this.template_tr(day.toJSON()));
+		$(this.el_tr).html(this.template_tr(day.toJSON()));
+		$("#td_2_doc__" + day.get("doc_id") + "__" + day.get("data")).append(sp);
 	}
 });

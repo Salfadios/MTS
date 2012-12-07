@@ -1,4 +1,4 @@
 <tr id="tr_doc__<%=@doc_id + "__" + @data%>" class="tr_spec__<%=@specialization_id %>">
 	<td id="td_1_doc__<%=@doc_id + "__" + @data%>"><%=@doc_fio %></td>
-	<td  id="td_2_doc__<%=@doc_id + "__" + @data%>" ><%=@span%></td>
+	<td  id="td_2_doc__<%=@doc_id + "__" + @data%>" ></td>
 </tr>

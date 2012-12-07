@@ -4,7 +4,8 @@ MTS.Views.WorkDayView = Backbone.View.extend({
 	el_tr : $('#tablebody'),
 	initialize : function()
 	{
-		var days = new MTS.Collections.WorkDayCollection();
+		var days = new MTS.Collections.WorkDayCollection(),
+		day = new MTS.Models.WorkDay();
 		days.on("reset", this.render, this); 
 		this.render();      
 	},

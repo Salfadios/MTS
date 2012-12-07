@@ -4,6 +4,7 @@ MTS.Views.TicketCollectionView = Backbone.View.extend({
 		"click #table_time td":"addOne"
 	},
 	initialize: function(){
+		Board = new TicketCollection();
 		Board.on("reset", this.render, this);
 		Board.fetch();
 		console.log("Tickets initialized!");

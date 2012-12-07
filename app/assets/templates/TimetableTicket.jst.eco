@@ -1,1 +1,1 @@
-<span id="ticket__<%=doc_id + "__" + data + "__" + ticket_t%>" class="<%=duration_class %>"><%=ticket_time %></span>   
+<span id="ticket__<%=@doc_id + "__" + @data + "__" + @ticket_t%>" class="<%=@duration_class %>"><%=@ticket_time %></span>   

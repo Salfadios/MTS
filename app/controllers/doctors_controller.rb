@@ -1,7 +1,7 @@
 class DoctorsController < ApplicationController
   # GET /doctors
   # GET /doctors.json
-  def showall
+  def index
     @doctors = Doctor.all
 
     respond_to do |format|

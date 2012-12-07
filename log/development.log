@@ -14632,3 +14632,3768 @@ ActionView::Template::Error (undefined method `each' for nil:NilClass):
   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (223.0ms)
 Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-07 11:46:08 +0200
+Connecting to database specified by database.yml
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (15.6ms)
+Compiled scaffolds.css  (31ms)  (pid 2652)
+Compiled specializations.css  (15ms)  (pid 2652)
+Compiled ticket_statuses.css  (0ms)  (pid 2652)
+Compiled users.css  (0ms)  (pid 2652)
+Compiled users_statuses.css  (0ms)  (pid 2652)
+Compiled working_timetables.css  (0ms)  (pid 2652)
+Compiled application.css  (0ms)  (pid 2652)
+Compiled models/Workday.js  (0ms)  (pid 2652)
+Compiled views/Workday.js  (0ms)  (pid 2652)
+Compiled application.js  (125ms)  (pid 2652)
+Completed 200 OK in 1125ms (Views: 1125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 11:46:12 +0200
+Served asset /main.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 11:46:12 +0200
+Served asset /scaffolds.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 11:46:12 +0200
+Served asset /application.css - 304 Not Modified (46ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 11:46:12 +0200
+Served asset /specializations.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:46:12 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 11:46:12 +0200
+Served asset /style.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 11:46:12 +0200
+Served asset /users.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:46:12 +0200
+Served asset /users_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 11:46:12 +0200
+Served asset /working_timetables.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:12 +0200
+Served asset /jquery.js - 304 Not Modified (78ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:13 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:13 +0200
+Served asset /underscore.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:13 +0200
+Served asset /backbone.js - 304 Not Modified (46ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:13 +0200
+Served asset /mts.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:13 +0200
+Served asset /Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:13 +0200
+Served asset /TCell.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:13 +0200
+Served asset /THead.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:13 +0200
+Served asset /TemplateTr.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:13 +0200
+Served asset /Ticket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:13 +0200
+Served asset /TicketSmall.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:13 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (46ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:13 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:13 +0200
+Served asset /models/Doctor.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:14 +0200
+Served asset /models/Ticket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:14 +0200
+Served asset /models/Workday.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:14 +0200
+Served asset /models/work_week.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:14 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:14 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:14 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:14 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:14 +0200
+Served asset /views/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:14 +0200
+Served asset /views/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:14 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:14 +0200
+Served asset /views/Workday.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:14 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:14 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:14 +0200
+Served asset /run.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:14 +0200
+Served asset /specializations.js - 304 Not Modified (46ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:14 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:15 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:15 +0200
+Served asset /users_statuses.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:15 +0200
+Served asset /working_timetables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:15 +0200
+Served asset /application.js - 304 Not Modified (171ms)
+
+
+Started GET "/tickets" for 127.0.0.1 at 2012-12-07 11:46:15 +0200
+Processing by TicketsController#index as JSON
+  [1m[36mTicket Load (0.0ms)[0m  [1mSELECT "tickets".* FROM "tickets" [0m
+Completed 200 OK in 297ms (Views: 15.6ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/tickets" for 127.0.0.1 at 2012-12-07 11:46:52 +0200
+Processing by TicketsController#index as HTML
+  [1m[35mTicket Load (0.0ms)[0m  SELECT "tickets".* FROM "tickets" 
+  Rendered tickets/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 156ms (Views: 156.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 11:46:52 +0200
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 11:46:52 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 11:46:52 +0200
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 11:46:52 +0200
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 11:46:52 +0200
+Served asset /specializations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /users_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /working_timetables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/tickets.json" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Processing by TicketsController#index as JSON
+  [1m[36mTicket Load (0.0ms)[0m  [1mSELECT "tickets".* FROM "tickets" [0m
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /mts.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /TCell.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /THead.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /TemplateTr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /TicketSmall.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /models/Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:53 +0200
+Served asset /models/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /models/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /models/work_week.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /views/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /views/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /views/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /run.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /specializations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /working_timetables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /users_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 11:46:54 +0200
+Served asset /application.js - 304 Not Modified (31ms)
+
+
+Started GET "/tickets" for 127.0.0.1 at 2012-12-07 11:46:55 +0200
+Processing by TicketsController#index as JSON
+  [1m[35mTicket Load (0.0ms)[0m  SELECT "tickets".* FROM "tickets" 
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/work_days" for 127.0.0.1 at 2012-12-07 11:47:03 +0200
+Processing by WorkDaysController#index as HTML
+  [1m[36mWorkDay Load (0.0ms)[0m  [1mSELECT "work_days".* FROM "work_days" [0m
+  Rendered work_days/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 203ms (Views: 171.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 11:47:03 +0200
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 11:47:03 +0200
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 11:47:03 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /style.css - 304 Not Modified (46ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /specializations.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /users_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /working_timetables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /underscore.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /backbone.js - 304 Not Modified (62ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /mts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /TCell.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /THead.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /TemplateTr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /TicketSmall.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:04 +0200
+Served asset /models/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /models/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /models/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /models/work_week.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /views/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /views/Ticket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /views/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /run.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /specializations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /working_timetables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:05 +0200
+Served asset /users_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:06 +0200
+Served asset /application.js - 304 Not Modified (31ms)
+
+
+Started GET "/tickets" for 127.0.0.1 at 2012-12-07 11:47:06 +0200
+Processing by TicketsController#index as JSON
+  [1m[35mTicket Load (0.0ms)[0m  SELECT "tickets".* FROM "tickets" 
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/specializations" for 127.0.0.1 at 2012-12-07 11:47:17 +0200
+Processing by SpecializationsController#index as HTML
+  [1m[36mSpecialization Load (0.0ms)[0m  [1mSELECT "specializations".* FROM "specializations" [0m
+  Rendered specializations/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 11:47:17 +0200
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /specializations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /working_timetables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /users_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /underscore.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /Doctor.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /mts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /TCell.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /THead.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /TemplateTr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /TicketSmall.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:18 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /models/Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /models/Ticket.js - 304 Not Modified (46ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /models/work_week.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /models/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /views/Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /views/Ticket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (62ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /views/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /run.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /specializations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:19 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:20 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:20 +0200
+Served asset /users_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:20 +0200
+Served asset /working_timetables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 11:47:20 +0200
+Served asset /application.js - 304 Not Modified (31ms)
+
+
+Started GET "/tickets" for 127.0.0.1 at 2012-12-07 11:47:20 +0200
+Processing by TicketsController#index as JSON
+  [1m[35mTicket Load (0.0ms)[0m  SELECT "tickets".* FROM "tickets" 
+Completed 200 OK in 16ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-12-07 11:48:54 +0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 11:48:54 +0200
+Served asset /specializations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 11:48:54 +0200
+Served asset /style.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 11:48:54 +0200
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 11:48:54 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 11:48:54 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 11:48:54 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:48:54 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:48:54 +0200
+Served asset /users_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 11:48:54 +0200
+Served asset /working_timetables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:54 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:54 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:54 +0200
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:55 +0200
+Served asset /mts.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:55 +0200
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:55 +0200
+Served asset /Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:55 +0200
+Served asset /TCell.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:55 +0200
+Served asset /THead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:55 +0200
+Served asset /TemplateTr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:55 +0200
+Served asset /Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:55 +0200
+Served asset /TicketSmall.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:55 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:55 +0200
+Served asset /models/Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:55 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:55 +0200
+Served asset /models/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:55 +0200
+Served asset /models/Ticket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:55 +0200
+Served asset /models/work_week.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:55 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:56 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:56 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:56 +0200
+Served asset /views/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:56 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:56 +0200
+Served asset /views/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:56 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:56 +0200
+Served asset /views/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:56 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:56 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:56 +0200
+Served asset /run.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:56 +0200
+Served asset /specializations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:56 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:56 +0200
+Served asset /users_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:56 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:56 +0200
+Served asset /working_timetables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 11:48:56 +0200
+Served asset /application.js - 304 Not Modified (78ms)
+
+
+Started GET "/tickets" for 127.0.0.1 at 2012-12-07 11:48:56 +0200
+Processing by TicketsController#index as JSON
+  [1m[35mTicket Load (0.0ms)[0m  SELECT "tickets".* FROM "tickets" 
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tickets" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Processing by TicketsController#index as HTML
+  [1m[36mTicket Load (0.0ms)[0m  [1mSELECT "tickets".* FROM "tickets" [0m
+  Rendered tickets/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 141ms (Views: 140.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /specializations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /users_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /working_timetables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /mts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /TCell.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /THead.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /TemplateTr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:17 +0200
+Served asset /TicketSmall.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /models/Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /models/Ticket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /models/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /models/work_week.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /views/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /views/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /views/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /run.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /specializations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /users_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /working_timetables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:18 +0200
+Served asset /application.js - 304 Not Modified (62ms)
+
+
+Started GET "/tickets" for 127.0.0.1 at 2012-12-07 11:49:19 +0200
+Processing by TicketsController#index as JSON
+  [1m[35mTicket Load (0.0ms)[0m  SELECT "tickets".* FROM "tickets" 
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ticket_statuses" for 127.0.0.1 at 2012-12-07 11:49:25 +0200
+Processing by TicketStatusesController#index as HTML
+  [1m[36mTicketStatus Load (0.0ms)[0m  [1mSELECT "ticket_statuses".* FROM "ticket_statuses" [0m
+  Rendered ticket_statuses/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 109.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:25 +0200
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:25 +0200
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:25 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:25 +0200
+Served asset /specializations.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:25 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:25 +0200
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:25 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:25 +0200
+Served asset /users_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:25 +0200
+Served asset /working_timetables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:25 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:26 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:26 +0200
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:26 +0200
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:26 +0200
+Served asset /mts.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:26 +0200
+Served asset /Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:26 +0200
+Served asset /TCell.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:26 +0200
+Served asset /THead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:26 +0200
+Served asset /TemplateTr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:26 +0200
+Served asset /Ticket.js - 304 Not Modified (46ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:26 +0200
+Served asset /TicketSmall.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:26 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:26 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:26 +0200
+Served asset /models/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:26 +0200
+Served asset /models/Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:26 +0200
+Served asset /models/work_week.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:27 +0200
+Served asset /models/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:27 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:27 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:27 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:27 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:27 +0200
+Served asset /views/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:27 +0200
+Served asset /views/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:27 +0200
+Served asset /views/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:27 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:27 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:27 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:27 +0200
+Served asset /run.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:27 +0200
+Served asset /specializations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:27 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:27 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:27 +0200
+Served asset /users_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:27 +0200
+Served asset /application.js - 304 Not Modified (78ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:27 +0200
+Served asset /working_timetables.js - 304 Not Modified (0ms)
+
+
+Started GET "/tickets" for 127.0.0.1 at 2012-12-07 11:49:28 +0200
+Processing by TicketsController#index as JSON
+  [1m[35mTicket Load (0.0ms)[0m  SELECT "tickets".* FROM "tickets" 
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user_statuses" for 127.0.0.1 at 2012-12-07 11:49:45 +0200
+
+ActionController::RoutingError (No route matches [GET] "/user_statuses"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/users_statuses" for 127.0.0.1 at 2012-12-07 11:49:57 +0200
+Processing by UsersStatusesController#index as HTML
+  [1m[36mUsersStatus Load (0.0ms)[0m  [1mSELECT "users_statuses".* FROM "users_statuses" [0m
+  Rendered users_statuses/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 156.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:58 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:58 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:58 +0200
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:58 +0200
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:58 +0200
+Served asset /application.css - 304 Not Modified (46ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:58 +0200
+Served asset /specializations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:58 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:58 +0200
+Served asset /users_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 11:49:58 +0200
+Served asset /working_timetables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:58 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:59 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:59 +0200
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:59 +0200
+Served asset /backbone.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:59 +0200
+Served asset /mts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:59 +0200
+Served asset /Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:59 +0200
+Served asset /TCell.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:59 +0200
+Served asset /THead.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:59 +0200
+Served asset /TemplateTr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:59 +0200
+Served asset /Ticket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:59 +0200
+Served asset /TicketSmall.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:59 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:59 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:59 +0200
+Served asset /models/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:59 +0200
+Served asset /models/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:59 +0200
+Served asset /models/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:59 +0200
+Served asset /models/work_week.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 11:49:59 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 11:50:00 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 11:50:00 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 11:50:00 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:50:00 +0200
+Served asset /views/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:50:00 +0200
+Served asset /views/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:50:00 +0200
+Served asset /views/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 11:50:00 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 11:50:00 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 11:50:00 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 11:50:00 +0200
+Served asset /run.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 11:50:00 +0200
+Served asset /specializations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 11:50:00 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:50:00 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:50:00 +0200
+Served asset /users_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 11:50:00 +0200
+Served asset /working_timetables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 11:50:00 +0200
+Served asset /application.js - 304 Not Modified (31ms)
+
+
+Started GET "/tickets" for 127.0.0.1 at 2012-12-07 11:50:00 +0200
+Processing by TicketsController#index as JSON
+  [1m[35mTicket Load (0.0ms)[0m  SELECT "tickets".* FROM "tickets" 
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/work_weeks" for 127.0.0.1 at 2012-12-07 11:50:11 +0200
+
+ActionController::RoutingError (No route matches [GET] "/work_weeks"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/work_timetables" for 127.0.0.1 at 2012-12-07 11:50:27 +0200
+
+ActionController::RoutingError (No route matches [GET] "/work_timetables"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/doctors" for 127.0.0.1 at 2012-12-07 11:52:04 +0200
+Processing by DoctorsController#index as HTML
+  [1m[36mDoctor Load (0.0ms)[0m  [1mSELECT "doctors".* FROM "doctors" [0m
+  Rendered doctors/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 141ms (Views: 109.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 11:52:04 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 11:52:04 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 11:52:04 +0200
+Served asset /specializations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 11:52:04 +0200
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 11:52:04 +0200
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /users_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /working_timetables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /mts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /TCell.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /THead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /TemplateTr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /TicketSmall.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /models/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /models/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /models/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /models/work_week.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:05 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (78ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:06 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:06 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:06 +0200
+Served asset /views/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:06 +0200
+Served asset /views/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:06 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:06 +0200
+Served asset /views/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:06 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:06 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:06 +0200
+Served asset /run.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:06 +0200
+Served asset /specializations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:06 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:06 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:06 +0200
+Served asset /working_timetables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:06 +0200
+Served asset /users_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:06 +0200
+Served asset /application.js - 304 Not Modified (31ms)
+
+
+Started GET "/tickets" for 127.0.0.1 at 2012-12-07 11:52:07 +0200
+Processing by TicketsController#index as JSON
+  [1m[35mTicket Load (0.0ms)[0m  SELECT "tickets".* FROM "tickets" 
+Completed 200 OK in 31ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/working_timetables" for 127.0.0.1 at 2012-12-07 11:52:36 +0200
+Processing by WorkingTimetablesController#index as HTML
+  [1m[36mWorkingTimetable Load (0.0ms)[0m  [1mSELECT "working_timetables".* FROM "working_timetables" [0m
+  Rendered working_timetables/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 11:52:36 +0200
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 11:52:36 +0200
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 11:52:36 +0200
+Served asset /specializations.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 11:52:36 +0200
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 11:52:36 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:52:36 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 11:52:36 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:52:36 +0200
+Served asset /users_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 11:52:36 +0200
+Served asset /working_timetables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:36 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:36 +0200
+Served asset /underscore.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:37 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:37 +0200
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:37 +0200
+Served asset /mts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:37 +0200
+Served asset /Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:37 +0200
+Served asset /TCell.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:37 +0200
+Served asset /THead.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:37 +0200
+Served asset /TemplateTr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:37 +0200
+Served asset /Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:37 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:37 +0200
+Served asset /TicketSmall.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:37 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:37 +0200
+Served asset /models/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:37 +0200
+Served asset /models/Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:37 +0200
+Served asset /models/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:37 +0200
+Served asset /models/work_week.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:37 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:37 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:37 +0200
+Served asset /views/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:38 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:38 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:38 +0200
+Served asset /views/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:38 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:38 +0200
+Served asset /views/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:38 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:38 +0200
+Served asset /run.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:38 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:38 +0200
+Served asset /specializations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:38 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:38 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:38 +0200
+Served asset /users_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:38 +0200
+Served asset /working_timetables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 11:52:38 +0200
+Served asset /application.js - 304 Not Modified (31ms)
+
+
+Started GET "/tickets" for 127.0.0.1 at 2012-12-07 11:52:38 +0200
+Processing by TicketsController#index as JSON
+  [1m[35mTicket Load (0.0ms)[0m  SELECT "tickets".* FROM "tickets" 
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/specializations" for 127.0.0.1 at 2012-12-07 11:54:30 +0200
+Processing by SpecializationsController#index as HTML
+  [1m[36mSpecialization Load (0.0ms)[0m  [1mSELECT "specializations".* FROM "specializations" [0m
+  Rendered specializations/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 78ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:30 +0200
+Served asset /application.css - 304 Not Modified (62ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:30 +0200
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:30 +0200
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:30 +0200
+Served asset /specializations.css - 200 OK (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:30 +0200
+Served asset /style.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:30 +0200
+Served asset /ticket_statuses.css - 200 OK (0ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:30 +0200
+Served asset /users_statuses.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:30 +0200
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:30 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:30 +0200
+Served asset /working_timetables.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:30 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:30 +0200
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:30 +0200
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:30 +0200
+Served asset /mts.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /TCell.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /THead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /TemplateTr.js - 200 OK (0ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /TicketSmall.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /TimetableTicket.js - 200 OK (0ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /work_weeks/index.js - 200 OK (0ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /models/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /models/Ticket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /models/Workday.js - 200 OK (0ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /models/work_week.js - 200 OK (0ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /collections/work_weeks.js - 200 OK (0ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /views/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /views/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /views/Workday.js - 200 OK (0ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 200 OK (15ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /routers/work_weeks_router.js - 200 OK (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /specializations.js - 200 OK (0ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /ticket_statuses.js - 200 OK (0ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:31 +0200
+Served asset /run.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:32 +0200
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:32 +0200
+Served asset /users_statuses.js - 200 OK (0ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:32 +0200
+Served asset /working_timetables.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:32 +0200
+Served asset /application.js - 200 OK (62ms)
+
+
+Started GET "/tickets" for 127.0.0.1 at 2012-12-07 11:54:32 +0200
+Processing by TicketsController#index as JSON
+  [1m[35mTicket Load (0.0ms)[0m  SELECT "tickets".* FROM "tickets" 
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-07 11:54:43 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:44 +0200
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:44 +0200
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:44 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:44 +0200
+Served asset /specializations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:44 +0200
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:44 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:44 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:44 +0200
+Served asset /users_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:44 +0200
+Served asset /working_timetables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:44 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:44 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:44 +0200
+Served asset /underscore.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:44 +0200
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:44 +0200
+Served asset /mts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:45 +0200
+Served asset /Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:45 +0200
+Served asset /TCell.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:45 +0200
+Served asset /THead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:45 +0200
+Served asset /TemplateTr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:45 +0200
+Served asset /Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:45 +0200
+Served asset /TicketSmall.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:45 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:45 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:45 +0200
+Served asset /models/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:45 +0200
+Served asset /models/Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:45 +0200
+Served asset /models/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:45 +0200
+Served asset /models/work_week.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:45 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:45 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:45 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:45 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:45 +0200
+Served asset /views/Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:45 +0200
+Served asset /views/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:46 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:46 +0200
+Served asset /views/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:46 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:46 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:46 +0200
+Served asset /specializations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:46 +0200
+Served asset /run.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:46 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:46 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:46 +0200
+Served asset /users_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:46 +0200
+Served asset /working_timetables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:46 +0200
+Served asset /application.js - 304 Not Modified (31ms)
+
+
+Started GET "/tickets" for 127.0.0.1 at 2012-12-07 11:54:46 +0200
+Processing by TicketsController#index as JSON
+  [1m[36mTicket Load (0.0ms)[0m  [1mSELECT "tickets".* FROM "tickets" [0m
+Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-07 11:54:51 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:51 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:51 +0200
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:51 +0200
+Served asset /specializations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:51 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /style.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /users_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /users.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /working_timetables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /backbone.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /underscore.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /mts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /TCell.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /THead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /TemplateTr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /TicketSmall.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:52 +0200
+Served asset /models/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /models/Ticket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /models/work_week.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /models/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /views/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /views/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /views/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /run.js - 304 Not Modified (62ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /specializations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /working_timetables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /users_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 11:54:53 +0200
+Served asset /application.js - 304 Not Modified (46ms)
+
+
+Started GET "/tickets" for 127.0.0.1 at 2012-12-07 11:54:54 +0200
+Processing by TicketsController#index as JSON
+  [1m[35mTicket Load (0.0ms)[0m  SELECT "tickets".* FROM "tickets" 
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-07 12:03:50 +0200
+Connecting to database specified by database.yml
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (15.6ms)
+Compiled views/Workday.js  (0ms)  (pid 3440)
+Compiled run.js  (0ms)  (pid 3440)
+Compiled application.js  (62ms)  (pid 3440)
+Completed 200 OK in 938ms (Views: 937.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 12:03:53 +0200
+Served asset /application.css - 304 Not Modified (46ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 12:03:53 +0200
+Served asset /specializations.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 12:03:53 +0200
+Served asset /main.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 12:03:53 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 12:03:53 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 12:03:53 +0200
+Served asset /style.css - 304 Not Modified (62ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 12:03:54 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 12:03:54 +0200
+Served asset /users_statuses.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 12:03:54 +0200
+Served asset /working_timetables.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:54 +0200
+Served asset /jquery.js - 304 Not Modified (93ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:54 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:54 +0200
+Served asset /underscore.js - 304 Not Modified (93ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:54 +0200
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:54 +0200
+Served asset /mts.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:54 +0200
+Served asset /Doctor.js - 304 Not Modified (78ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:54 +0200
+Served asset /TCell.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:54 +0200
+Served asset /THead.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:54 +0200
+Served asset /TemplateTr.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:54 +0200
+Served asset /Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:55 +0200
+Served asset /TicketSmall.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:55 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (46ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:55 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:55 +0200
+Served asset /models/Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:55 +0200
+Served asset /models/Ticket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:55 +0200
+Served asset /models/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:55 +0200
+Served asset /models/work_week.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:55 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:55 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:55 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:55 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:55 +0200
+Served asset /views/Ticket.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:55 +0200
+Served asset /views/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:55 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:55 +0200
+Served asset /views/Workday.js - 200 OK (15ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:55 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:56 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:56 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:56 +0200
+Served asset /specializations.js - 304 Not Modified (46ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:56 +0200
+Served asset /run.js - 200 OK (15ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:56 +0200
+Served asset /users.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:56 +0200
+Served asset /application.js - 304 Not Modified (171ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:56 +0200
+Served asset /users_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 12:03:56 +0200
+Served asset /working_timetables.js - 304 Not Modified (15ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-07 12:04:48 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 156ms (Views: 156.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 12:04:48 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 12:04:48 +0200
+Served asset /specializations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 12:04:48 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 12:04:48 +0200
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 12:04:48 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 12:04:48 +0200
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 12:04:49 +0200
+Served asset /users_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 12:04:49 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:49 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 12:04:49 +0200
+Served asset /working_timetables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:49 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:49 +0200
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:49 +0200
+Served asset /backbone.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:49 +0200
+Served asset /mts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:49 +0200
+Served asset /TCell.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:49 +0200
+Served asset /Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:49 +0200
+Served asset /THead.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:49 +0200
+Served asset /TemplateTr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:49 +0200
+Served asset /Ticket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:49 +0200
+Served asset /TicketSmall.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:49 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:49 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:50 +0200
+Served asset /models/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:50 +0200
+Served asset /models/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:50 +0200
+Served asset /models/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:50 +0200
+Served asset /models/work_week.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:50 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:50 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:50 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:50 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:50 +0200
+Served asset /views/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:50 +0200
+Served asset /views/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:50 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:50 +0200
+Served asset /views/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:50 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:50 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:50 +0200
+Served asset /run.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:50 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:51 +0200
+Served asset /specializations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:51 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:51 +0200
+Served asset /users_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:51 +0200
+Served asset /working_timetables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 12:04:51 +0200
+Served asset /application.js - 304 Not Modified (46ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-07 12:06:23 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Compiled collections/work_weeks.js  (0ms)  (pid 3440)
+Compiled views/work_weeks/work_weeks_index.js  (0ms)  (pid 3440)
+Compiled application.js  (46ms)  (pid 3440)
+Completed 200 OK in 500ms (Views: 500.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 12:06:24 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 12:06:24 +0200
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 12:06:24 +0200
+Served asset /specializations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 12:06:24 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 12:06:24 +0200
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 12:06:24 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 12:06:24 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 12:06:24 +0200
+Served asset /working_timetables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 12:06:24 +0200
+Served asset /users_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:24 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:24 +0200
+Served asset /underscore.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:25 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:25 +0200
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:25 +0200
+Served asset /mts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:25 +0200
+Served asset /Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:25 +0200
+Served asset /TCell.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:25 +0200
+Served asset /TemplateTr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:25 +0200
+Served asset /THead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:25 +0200
+Served asset /Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:25 +0200
+Served asset /TicketSmall.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:25 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:26 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:26 +0200
+Served asset /models/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:26 +0200
+Served asset /models/Ticket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:26 +0200
+Served asset /models/Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:26 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:26 +0200
+Served asset /models/work_week.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:26 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:26 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:26 +0200
+Served asset /collections/work_weeks.js - 200 OK (15ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:26 +0200
+Served asset /views/Doctor.js - 304 Not Modified (46ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:26 +0200
+Served asset /views/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:26 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:26 +0200
+Served asset /views/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:26 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 200 OK (0ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:26 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:27 +0200
+Served asset /run.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:27 +0200
+Served asset /specializations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:27 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:27 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:27 +0200
+Served asset /users_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:27 +0200
+Served asset /working_timetables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 12:06:27 +0200
+Served asset /application.js - 304 Not Modified (203ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-07 12:07:22 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Compiled models/work_week.js  (0ms)  (pid 3440)
+Compiled routers/work_weeks_router.js  (0ms)  (pid 3440)
+Compiled application.js  (46ms)  (pid 3440)
+Completed 200 OK in 531ms (Views: 531.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 12:07:23 +0200
+Served asset /scaffolds.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 12:07:23 +0200
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 12:07:23 +0200
+Served asset /application.css - 304 Not Modified (62ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 12:07:23 +0200
+Served asset /specializations.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 12:07:23 +0200
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 12:07:23 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 12:07:23 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 12:07:23 +0200
+Served asset /users_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:23 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 12:07:23 +0200
+Served asset /working_timetables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:23 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:23 +0200
+Served asset /underscore.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:24 +0200
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:24 +0200
+Served asset /mts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:24 +0200
+Served asset /TCell.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:24 +0200
+Served asset /Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:24 +0200
+Served asset /THead.js - 304 Not Modified (78ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:24 +0200
+Served asset /TemplateTr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:24 +0200
+Served asset /Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:24 +0200
+Served asset /TicketSmall.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:24 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:24 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:24 +0200
+Served asset /models/Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:24 +0200
+Served asset /models/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:24 +0200
+Served asset /models/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:24 +0200
+Served asset /models/work_week.js - 200 OK (62ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:25 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:25 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:25 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:25 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:25 +0200
+Served asset /views/Ticket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:25 +0200
+Served asset /views/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:25 +0200
+Served asset /views/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:25 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:25 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:25 +0200
+Served asset /routers/work_weeks_router.js - 200 OK (15ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:25 +0200
+Served asset /run.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:25 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:25 +0200
+Served asset /specializations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:25 +0200
+Served asset /working_timetables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:25 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:26 +0200
+Served asset /users_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:26 +0200
+Served asset /application.js - 304 Not Modified (203ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-07 12:07:45 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Compiled collections/work_weeks.js  (0ms)  (pid 3440)
+Compiled application.js  (62ms)  (pid 3440)
+Completed 200 OK in 516ms (Views: 515.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 12:07:46 +0200
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 12:07:46 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 12:07:46 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 12:07:46 +0200
+Served asset /specializations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 12:07:46 +0200
+Served asset /style.css - 304 Not Modified (46ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 12:07:46 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 12:07:46 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 12:07:46 +0200
+Served asset /users_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 12:07:46 +0200
+Served asset /working_timetables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:46 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:46 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:46 +0200
+Served asset /underscore.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:47 +0200
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:47 +0200
+Served asset /mts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:47 +0200
+Served asset /TCell.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:47 +0200
+Served asset /Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:47 +0200
+Served asset /THead.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:47 +0200
+Served asset /TemplateTr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:47 +0200
+Served asset /Ticket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:48 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:48 +0200
+Served asset /TicketSmall.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:48 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:48 +0200
+Served asset /models/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:48 +0200
+Served asset /models/Ticket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:48 +0200
+Served asset /models/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:48 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:48 +0200
+Served asset /models/work_week.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:48 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:48 +0200
+Served asset /views/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:48 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:48 +0200
+Served asset /collections/work_weeks.js - 200 OK (0ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:48 +0200
+Served asset /views/Ticket.js - 304 Not Modified (46ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:48 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:49 +0200
+Served asset /views/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:49 +0200
+Served asset /run.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:49 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:49 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:49 +0200
+Served asset /specializations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:49 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:49 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:49 +0200
+Served asset /users_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:49 +0200
+Served asset /working_timetables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 12:07:49 +0200
+Served asset /application.js - 304 Not Modified (218ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-07 12:10:12 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Compiled views/Workday.js  (0ms)  (pid 3440)
+Compiled application.js  (46ms)  (pid 3440)
+Completed 200 OK in 469ms (Views: 468.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 12:10:12 +0200
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 12:10:13 +0200
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 12:10:13 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 12:10:13 +0200
+Served asset /specializations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 12:10:13 +0200
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 12:10:13 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 12:10:13 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 12:10:13 +0200
+Served asset /users_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 12:10:13 +0200
+Served asset /working_timetables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:13 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:13 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:13 +0200
+Served asset /underscore.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:13 +0200
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:14 +0200
+Served asset /mts.js - 304 Not Modified (62ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:14 +0200
+Served asset /Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:14 +0200
+Served asset /TCell.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:14 +0200
+Served asset /THead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:14 +0200
+Served asset /TemplateTr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:14 +0200
+Served asset /Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:14 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:14 +0200
+Served asset /TicketSmall.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:14 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:14 +0200
+Served asset /models/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:15 +0200
+Served asset /models/Ticket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:15 +0200
+Served asset /models/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:15 +0200
+Served asset /models/work_week.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:15 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:15 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:15 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:15 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:15 +0200
+Served asset /views/Ticket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:15 +0200
+Served asset /views/Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:15 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:15 +0200
+Served asset /views/Workday.js - 200 OK (31ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:15 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:15 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:15 +0200
+Served asset /specializations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:16 +0200
+Served asset /run.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:16 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:16 +0200
+Served asset /users_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:16 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:16 +0200
+Served asset /working_timetables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:16 +0200
+Served asset /application.js - 304 Not Modified (250ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-07 12:10:55 +0200
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.0ms)
+Compiled views/Workday.js  (0ms)  (pid 3440)
+Compiled application.js  (62ms)  (pid 3440)
+Completed 200 OK in 484ms (Views: 484.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-07 12:10:55 +0200
+Served asset /main.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-07 12:10:55 +0200
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-07 12:10:56 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-07 12:10:56 +0200
+Served asset /specializations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-07 12:10:56 +0200
+Served asset /style.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 12:10:56 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-07 12:10:56 +0200
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-07 12:10:56 +0200
+Served asset /users_statuses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-07 12:10:56 +0200
+Served asset /working_timetables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:56 +0200
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:56 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:56 +0200
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:56 +0200
+Served asset /backbone.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:56 +0200
+Served asset /mts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:56 +0200
+Served asset /Doctor.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:57 +0200
+Served asset /TCell.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:57 +0200
+Served asset /THead.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:57 +0200
+Served asset /TemplateTr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:57 +0200
+Served asset /TicketSmall.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:57 +0200
+Served asset /Ticket.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:57 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:57 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:57 +0200
+Served asset /models/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:57 +0200
+Served asset /models/Ticket.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:57 +0200
+Served asset /models/Workday.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:57 +0200
+Served asset /models/work_week.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:57 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:57 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:57 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (62ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:57 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:58 +0200
+Served asset /views/Doctor.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:58 +0200
+Served asset /views/Ticket.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:58 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:58 +0200
+Served asset /views/Workday.js - 200 OK (0ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:58 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:58 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:58 +0200
+Served asset /run.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:58 +0200
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:58 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:58 +0200
+Served asset /specializations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:58 +0200
+Served asset /working_timetables.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:58 +0200
+Served asset /users_statuses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-07 12:10:58 +0200
+Served asset /application.js - 304 Not Modified (218ms)

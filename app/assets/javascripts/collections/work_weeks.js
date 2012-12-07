@@ -1,5 +1,5 @@
-Mts.Collections.WorkWeeks = Backbone.Collection.extend({
+MTS.Collections.WorkWeeks = Backbone.Collection.extend({
 
-  model: Mts.Models.WorkWeek
+  model: MTS.Models.WorkWeek
 
 });

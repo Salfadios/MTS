@@ -1,4 +1,4 @@
-Mts.Views.WorkWeeksIndex = Backbone.View.extend({
+MTS.Views.WorkWeeksIndex = Backbone.View.extend({
 
   template: JST['work_weeks/index']
 

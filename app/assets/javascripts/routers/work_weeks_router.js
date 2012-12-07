@@ -1,3 +1,3 @@
-Mts.Routers.WorkWeeks = Backbone.Router.extend({
+MTS.Routers.WorkWeeks = Backbone.Router.extend({
 
 });

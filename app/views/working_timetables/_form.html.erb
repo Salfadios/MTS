@@ -1,0 +1,25 @@
+<%= form_for(@working_timetable) do |f| %>
+  <% if @working_timetable.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@working_timetable.errors.count, "error") %> prohibited this working_timetable from being saved:</h2>
+
+      <ul>
+      <% @working_timetable.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :doctor_id %><br />
+    <%= f.number_field :doctor_id %>
+  </div>
+  <div class="field">
+    <%= f.label :working_time_json_hash %><br />
+    <%= f.text_field :working_time_json_hash %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

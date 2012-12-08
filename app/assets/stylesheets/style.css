@@ -6,7 +6,7 @@
 	margin-left:auto;
 	margin-right:auto;
 	padding:0px;
-	width:940px;
+	width:90%;
 	position:relative;
 }
 
@@ -92,12 +92,16 @@ label {
 
 #timetable {
 	background-color: #E6E6FA;
-	width:100%
+	width:100%;
+}
+#timetable td.doc {
+	width:65px;
 }
 #timetable td {
 	color: white;
 	background-color: #8F8781;
 	font-weight:normal;
+	
 }
 
 #timetable div {
@@ -117,7 +121,7 @@ label {
      border: 1px solid black;
      float: left;
      font-size: 16px;
-     width: 102px;
+       width: 102px;
 	 }
   
   .half
@@ -130,7 +134,7 @@ label {
   {    border: 1px solid black;
       float: left;
       font-size: 10px;
-      width: 24px;
+     width: 24px;
 	  }
 table
 {

@@ -37,14 +37,15 @@ MTS.Views.WorkDayView = Backbone.View.extend({
 					day.set('ticket_time', time[0]+':' + time[1]);
 				else
 					day.set('ticket_time', '-');
+				if(parseInt(time[0])/10<1)
+					time[0]='0'+parseInt(time[0]);
 				day.set('ticket_t', time[0]+'' + time[1]);
 				sp += this.template_span(day.toJSON());
 				duration = day.get('duration') + 0;
 				time[1] = parseInt(time[1]) + duration;
 			}
 			time[0]++;
-			if(time[0]/10<1)
-				time[0]='0'+time[0];
+			
 			day.set('ticket_time', time[0]+':' + time[1]);
 		}
 		$(this.el_tr).append(this.template_tr(day.toJSON()));

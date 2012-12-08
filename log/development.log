@@ -56311,6 +56311,7 @@ Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-08 2
 Served asset /working_timetables.js - 304 Not Modified (0ms)
 
 
+<<<<<<< HEAD
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 21:57:41 +0200
 Served asset /application.js - 304 Not Modified (70ms)
 
@@ -56319,3 +56320,521 @@ Started GET "/tickets" for 127.0.0.1 at 2012-12-08 21:57:41 +0200
 Processing by TicketsController#index as JSON
   [1m[35mTicket Load (1.0ms)[0m  SELECT "tickets".* FROM "tickets" 
 Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 1.0ms)
+=======
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 18:15:59 +0200
+Served asset /application.js - 304 Not Modified (164ms)
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDoctors (20121129192238)
+Migrating to CreateTickets (20121129194453)
+Migrating to CreateWorkDays (20121129213210)
+Migrating to CreateWorkingTimetables (20121206195628)
+Migrating to CreateUsers (20121206195833)
+Migrating to CreateSpecializations (20121206200249)
+Migrating to CreateTicketStatuses (20121206200457)
+Migrating to CreateUsersStatuses (20121206201010)
+Migrating to CreateWorkWeeks (20121206220806)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (5.0ms)[0m  CREATE TABLE "work_weeks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121206220806')[0m
+  [1m[35m (542.0ms)[0m  commit transaction
+  [1m[36m (2.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDoctors (20121129192238)
+Migrating to CreateTickets (20121129194453)
+Migrating to CreateWorkDays (20121129213210)
+Migrating to CreateWorkingTimetables (20121206195628)
+Migrating to CreateUsers (20121206195833)
+Migrating to CreateSpecializations (20121206200249)
+Migrating to CreateTicketStatuses (20121206200457)
+Migrating to CreateUsersStatuses (20121206201010)
+Migrating to CreateWorkWeeks (20121206220806)
+  [1m[35m (1.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDoctors (20121129192238)
+Migrating to CreateTickets (20121129194453)
+Migrating to CreateWorkDays (20121129213210)
+Migrating to CreateWorkingTimetables (20121206195628)
+Migrating to CreateUsers (20121206195833)
+Migrating to CreateSpecializations (20121206200249)
+Migrating to CreateTicketStatuses (20121206200457)
+Migrating to CreateUsersStatuses (20121206201010)
+Migrating to CreateWorkWeeks (20121206220806)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDoctors (20121129192238)
+Migrating to CreateTickets (20121129194453)
+Migrating to CreateWorkDays (20121129213210)
+Migrating to CreateWorkingTimetables (20121206195628)
+Migrating to CreateUsers (20121206195833)
+Migrating to CreateSpecializations (20121206200249)
+Migrating to CreateTicketStatuses (20121206200457)
+Migrating to CreateUsersStatuses (20121206201010)
+Migrating to CreateWorkWeeks (20121206220806)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDoctors (20121129192238)
+Migrating to CreateTickets (20121129194453)
+Migrating to CreateWorkDays (20121129213210)
+Migrating to CreateWorkingTimetables (20121206195628)
+Migrating to CreateUsers (20121206195833)
+Migrating to CreateSpecializations (20121206200249)
+Migrating to CreateTicketStatuses (20121206200457)
+Migrating to CreateUsersStatuses (20121206201010)
+Migrating to CreateWorkWeeks (20121206220806)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDoctors (20121129192238)
+Migrating to CreateWorkDays (20121129213210)
+Migrating to CreateWorkingTimetables (20121206195628)
+Migrating to CreateUsers (20121206195833)
+Migrating to CreateSpecializations (20121206200249)
+Migrating to CreateTicketStatuses (20121206200457)
+Migrating to CreateUsersStatuses (20121206201010)
+Migrating to CreateWorkWeeks (20121206220806)
+Migrating to CreateTickets (20121208202438)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "tickets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "doctor_id" integer, "user_id" integer, "datetime" varchar(255), "status_id" integer, "duration" integer, "order_date" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+SQLite3::SQLException: table "tickets" already exists: CREATE TABLE "tickets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "doctor_id" integer, "user_id" integer, "datetime" varchar(255), "status_id" integer, "duration" integer, "order_date" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (2.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDoctors (20121129192238)
+Migrating to CreateWorkDays (20121129213210)
+Migrating to CreateWorkingTimetables (20121206195628)
+Migrating to CreateUsers (20121206195833)
+Migrating to CreateSpecializations (20121206200249)
+Migrating to CreateTicketStatuses (20121206200457)
+Migrating to CreateUsersStatuses (20121206201010)
+Migrating to CreateWorkWeeks (20121206220806)
+Migrating to CreateTickets (20121208202438)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (6.0ms)[0m  DROP TABLE "tickets"
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121208202438')[0m
+  [1m[35m (85.0ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (2.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDoctors (20121129192238)
+Migrating to CreateWorkDays (20121129213210)
+Migrating to CreateWorkingTimetables (20121206195628)
+Migrating to CreateUsers (20121206195833)
+Migrating to CreateSpecializations (20121206200249)
+Migrating to CreateTicketStatuses (20121206200457)
+Migrating to CreateUsersStatuses (20121206201010)
+Migrating to CreateWorkWeeks (20121206220806)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (2.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateDoctors (20121129192238)
+Migrating to CreateWorkDays (20121129213210)
+Migrating to CreateWorkingTimetables (20121206195628)
+Migrating to CreateUsers (20121206195833)
+Migrating to CreateSpecializations (20121206200249)
+Migrating to CreateTicketStatuses (20121206200457)
+Migrating to CreateUsersStatuses (20121206201010)
+Migrating to CreateWorkWeeks (20121206220806)
+Migrating to CreateTickets (20121208205007)
+  [1m[35m (1.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (7.0ms)[0m  CREATE TABLE "tickets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "doctor_id" integer, "user_id" integer, "date" varchar(255), "datetime" varchar(255), "status_id" integer, "duration" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121208205007')[0m
+  [1m[35m (180.0ms)[0m  commit transaction
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-08 22:58:37 +0200
+Connecting to database specified by database.yml
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (872.0ms)
+Compiled tickets.css  (278ms)  (pid 3160)
+Compiled application.css  (453ms)  (pid 3160)
+Compiled tickets.js  (3ms)  (pid 3160)
+Compiled application.js  (3349ms)  (pid 3160)
+Completed 200 OK in 9699ms (Views: 9695.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:11 +0200
+Served asset /application.css - 304 Not Modified (302ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:12 +0200
+Served asset /main.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:13 +0200
+Served asset /specializations.css - 304 Not Modified (30ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:13 +0200
+Served asset /style.css - 304 Not Modified (37ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:13 +0200
+Served asset /scaffolds.css - 304 Not Modified (36ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:13 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/tickets.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:14 +0200
+Served asset /tickets.css - 200 OK (55ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:14 +0200
+Served asset /users.css - 304 Not Modified (50ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:14 +0200
+Served asset /underscore.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:14 +0200
+Served asset /users_statuses.css - 304 Not Modified (27ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:14 +0200
+Served asset /working_timetables.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:15 +0200
+Served asset /jquery.js - 304 Not Modified (37ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:15 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:15 +0200
+Served asset /backbone.js - 304 Not Modified (29ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:15 +0200
+Served asset /mts.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:16 +0200
+Served asset /Doctor.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:16 +0200
+Served asset /TCell.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:16 +0200
+Served asset /THead.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:16 +0200
+Served asset /TemplateTr.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:16 +0200
+Served asset /Ticket.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:17 +0200
+Served asset /TicketSmall.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:17 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:17 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:17 +0200
+Served asset /models/Doctor.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:17 +0200
+Served asset /models/Ticket.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:18 +0200
+Served asset /models/Workday.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:18 +0200
+Served asset /models/work_week.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:18 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:18 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:18 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:18 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:19 +0200
+Served asset /views/Doctor.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:19 +0200
+Served asset /views/Ticket.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:19 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:19 +0200
+Served asset /views/Workday.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:19 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:19 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:20 +0200
+Served asset /run.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:20 +0200
+Served asset /specializations.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:20 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/tickets.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:20 +0200
+Served asset /tickets.js - 200 OK (60ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:21 +0200
+Served asset /users.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:21 +0200
+Served asset /users_statuses.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:21 +0200
+Served asset /working_timetables.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:21 +0200
+Served asset /application.js - 304 Not Modified (312ms)
+
+
+Started GET "/tickets/" for 127.0.0.1 at 2012-12-08 22:59:42 +0200
+Processing by TicketsController#index as HTML
+  [1m[36mTicket Load (2.0ms)[0m  [1mSELECT "tickets".* FROM "tickets" [0m
+  Rendered tickets/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 2552ms (Views: 401.0ms | ActiveRecord: 227.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:46 +0200
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:47 +0200
+Served asset /main.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/ticket_statuses.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:47 +0200
+Served asset /ticket_statuses.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/specializations.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:48 +0200
+Served asset /specializations.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:48 +0200
+Served asset /style.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:48 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tickets.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:48 +0200
+Served asset /tickets.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:48 +0200
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users_statuses.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:49 +0200
+Served asset /users_statuses.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/working_timetables.css?body=1" for 127.0.0.1 at 2012-12-08 22:59:49 +0200
+Served asset /working_timetables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:49 +0200
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:49 +0200
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:50 +0200
+Served asset /underscore.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/backbone.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:50 +0200
+Served asset /backbone.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/mts.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:50 +0200
+Served asset /mts.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/Doctor.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:50 +0200
+Served asset /Doctor.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/TCell.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:51 +0200
+Served asset /TCell.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/THead.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:51 +0200
+Served asset /THead.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/TemplateTr.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:51 +0200
+Served asset /TemplateTr.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/Ticket.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:51 +0200
+Served asset /Ticket.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/TicketSmall.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:51 +0200
+Served asset /TicketSmall.js - 304 Not Modified (13ms)
+
+
+Started GET "/assets/TimetableTicket.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:52 +0200
+Served asset /TimetableTicket.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/work_weeks/index.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:52 +0200
+Served asset /work_weeks/index.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/models/Doctor.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:52 +0200
+Served asset /models/Doctor.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/models/Ticket.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:52 +0200
+Served asset /models/Ticket.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/models/Workday.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:52 +0200
+Served asset /models/Workday.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/models/work_week.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:53 +0200
+Served asset /models/work_week.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:53 +0200
+Served asset /users.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/ticket_statuses.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:53 +0200
+Served asset /ticket_statuses.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/collections/Tickets.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:54 +0200
+Served asset /collections/Tickets.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/views/work_weeks/work_weeks_index.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:54 +0200
+Served asset /views/work_weeks/work_weeks_index.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/users_statuses.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:54 +0200
+Served asset /users_statuses.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/collections/Doctors.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:54 +0200
+Served asset /collections/Doctors.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:54 +0200
+Served asset /application.js - 304 Not Modified (260ms)
+
+
+Started GET "/assets/specializations.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:55 +0200
+Served asset /specializations.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/views/TicketCollection.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:55 +0200
+Served asset /views/TicketCollection.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/views/Doctor.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:55 +0200
+Served asset /views/Doctor.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/working_timetables.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:55 +0200
+Served asset /working_timetables.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/tickets.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:55 +0200
+Served asset /tickets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/run.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:56 +0200
+Served asset /run.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/views/Workday.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:56 +0200
+Served asset /views/Workday.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/collections/work_weeks.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:56 +0200
+Served asset /collections/work_weeks.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/routers/work_weeks_router.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:57 +0200
+Served asset /routers/work_weeks_router.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/views/Ticket.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:57 +0200
+Served asset /views/Ticket.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/collections/Workdays.js?body=1" for 127.0.0.1 at 2012-12-08 22:59:57 +0200
+Served asset /collections/Workdays.js - 304 Not Modified (3ms)
+>>>>>>> recreate scaffold db and all other for tickets

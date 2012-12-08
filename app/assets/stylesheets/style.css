@@ -136,6 +136,10 @@ label {
       font-size: 10px;
      width: 24px;
 	  }
+#timetable td span.color_ticket
+{
+	background-color:#3300CC;
+}
 table
 {
 	border : 1px;

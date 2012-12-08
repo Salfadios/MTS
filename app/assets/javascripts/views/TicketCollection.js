@@ -1,22 +1,23 @@
 MTS.Views.TicketCollectionView = Backbone.View.extend({
 	el: "body",
+	board: new MTS.Collections.TicketCollection(),
 	events: {
-		"click #table_time td":"addOne"
+		"click .hour":"addOne"
 	},
 	initialize: function(){
-		Board = new TicketCollection();
-		Board.on("reset", this.render, this);
-		Board.fetch();
-		console.log("Tickets initialized!");
+		this.board.on("reset", this.render, this);
+		this.board.fetch();
+		console.log("Ticket collection initialized!");
 	},
 	addOne: function(e){
-		Board.create({
+		/*this.board.create({
 			user_name: "Nochovniy Alexey",
 			address: "Yunih Lenintsev 22/115",
 			doctor_name: "Assanov S.",
 			date: "30.11.2012",
 			time: this.setTime(e)
-		});
+		});*/
+		console.log(e.target.id);
 	},
 	setTime: function(e){
 		var tdId = e.target.id,
@@ -27,16 +28,15 @@ MTS.Views.TicketCollectionView = Backbone.View.extend({
 		return hours + ":" + minutes;
 	},
 	render:function(){
-		var view, sticker, i, max = Board.models.length;
+		this.showAll();
+	},
+	showOne: function(ticket){
+		var view = new MTS.Views.TicketViewSmall({model:ticket}),
+		time = view.model.get('time').split(':');
+		view.render(".app");
+	},
+	showAll: function(){
 		this.$("#table_time td").empty();
-		for (i = 0; i < max; i++)
-		{
-			sticker = Board.models[i];
-			console.log(sticker);
-			view = new MTS.Views.TicketViewSmall({model:sticker});
-			var time = view.model.get('time').split(':');
-			//var id = '#' + time[0] + '' + time[1];
-			view.render(".app");
-		}
+		this.board.each(this.showOne);
 	}
 });

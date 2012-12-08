@@ -3,8 +3,10 @@ var MTS = {
 	Collections: {},
 	Views: {},
 	Routers: {},
+	Instances: {},
 	
-	initialize: function(){
+	initialize: function()
+	{
 		console.log('Application start!');
 	}
 }

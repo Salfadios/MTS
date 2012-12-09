@@ -34,7 +34,10 @@ MTS.Views.WorkDayView = Backbone.View.extend({
 				if(time[1] == 0)
 					time[1] ="00";
 				if(parseInt(time[0])>=parseInt(from[0])&&parseInt(time[0])<parseInt(to[0]))
+				{
 					day.set('ticket_time', time[0]+':' + time[1]);
+					day.set('duration_class', day.get('duration_class')+' color_ticket');
+				}
 				else
 					day.set('ticket_time', '-');
 				if(parseInt(time[0])/10<1)
@@ -45,7 +48,6 @@ MTS.Views.WorkDayView = Backbone.View.extend({
 				time[1] = parseInt(time[1]) + duration;
 			}
 			time[0]++;
-			
 			day.set('ticket_time', time[0]+':' + time[1]);
 		}
 		$(this.el_tr).append(this.template_tr(day.toJSON()));

@@ -3,9 +3,8 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       t.string :fio
       t.string :login
-      t.integer :status_id
+      t.integer :statusId
       t.string :password
-      t.string :last_login_date
 
       t.timestamps
     end

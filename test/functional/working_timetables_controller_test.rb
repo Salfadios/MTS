@@ -18,7 +18,7 @@ class WorkingTimetablesControllerTest < ActionController::TestCase
 
   test "should create working_timetable" do
     assert_difference('WorkingTimetable.count') do
-      post :create, working_timetable: { doctor_id: @working_timetable.doctor_id, working_time_json_hash: @working_timetable.working_time_json_hash }
+      post :create, working_timetable: { doctorId: @working_timetable.doctorId, workingTimeHash: @working_timetable.workingTimeHash }
     end
 
     assert_redirected_to working_timetable_path(assigns(:working_timetable))
@@ -35,7 +35,7 @@ class WorkingTimetablesControllerTest < ActionController::TestCase
   end
 
   test "should update working_timetable" do
-    put :update, id: @working_timetable, working_timetable: { doctor_id: @working_timetable.doctor_id, working_time_json_hash: @working_timetable.working_time_json_hash }
+    put :update, id: @working_timetable, working_timetable: { doctorId: @working_timetable.doctorId, workingTimeHash: @working_timetable.workingTimeHash }
     assert_redirected_to working_timetable_path(assigns(:working_timetable))
   end
 

@@ -1,8 +1,8 @@
 class CreateWorkingTimetables < ActiveRecord::Migration
-  def change
+  def change	
     create_table :working_timetables do |t|
-      t.integer :doctor_id
-      t.string :working_time_json_hash
+      t.integer :doctorId
+      t.string :workingTimeHash
 
       t.timestamps
     end

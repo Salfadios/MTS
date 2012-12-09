@@ -5,7 +5,7 @@ class DoctorsController < ApplicationController
     @doctors = Doctor.all
 
     respond_to do |format|
-      format.html # all.html.erb
+      format.html # index.html.erb
       format.json { render json: @doctors }
     end
   end

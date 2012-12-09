@@ -1,7 +1,4 @@
 Mts::Application.routes.draw do
-  resources :tickets
-
-
   resources :users_statuses
 
 
@@ -15,6 +12,12 @@ Mts::Application.routes.draw do
 
 
   resources :working_timetables
+
+
+  resources :tickets
+
+
+  resources :doctors
 
 
   root to: "main#index"

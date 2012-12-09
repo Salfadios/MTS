@@ -2,12 +2,11 @@
 
 <table>
   <tr>
-    <th>Doctor</th>
-    <th>User</th>
+    <th>Doctorid</th>
+    <th>Userid</th>
     <th>Date</th>
-    <th>Datetime</th>
-    <th>Status</th>
-    <th>Duration</th>
+    <th>Time</th>
+    <th>Statusid</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,12 +14,11 @@
 
 <% @tickets.each do |ticket| %>
   <tr>
-    <td><%= ticket.doctor_id %></td>
-    <td><%= ticket.user_id %></td>
+    <td><%= ticket.doctorId %></td>
+    <td><%= ticket.userId %></td>
     <td><%= ticket.date %></td>
-    <td><%= ticket.datetime %></td>
-    <td><%= ticket.status_id %></td>
-    <td><%= ticket.duration %></td>
+    <td><%= ticket.time %></td>
+    <td><%= ticket.statusId %></td>
     <td><%= link_to 'Show', ticket %></td>
     <td><%= link_to 'Edit', edit_ticket_path(ticket) %></td>
     <td><%= link_to 'Destroy', ticket, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -1,3 +1,3 @@
 class User < ActiveRecord::Base
-  attr_accessible :fio, :last_login_date, :login, :password, :status_id
+  attr_accessible :fio, :login, :password, :statusId
 end

@@ -2,8 +2,8 @@
 
 <table>
   <tr>
-    <th>Doctor</th>
-    <th>Working time json hash</th>
+    <th>Doctorid</th>
+    <th>Workingtimehash</th>
     <th></th>
     <th></th>
     <th></th>
@@ -11,8 +11,8 @@
 
 <% @working_timetables.each do |working_timetable| %>
   <tr>
-    <td><%= working_timetable.doctor_id %></td>
-    <td><%= working_timetable.working_time_json_hash %></td>
+    <td><%= working_timetable.doctorId %></td>
+    <td><%= working_timetable.workingTimeHash %></td>
     <td><%= link_to 'Show', working_timetable %></td>
     <td><%= link_to 'Edit', edit_working_timetable_path(working_timetable) %></td>
     <td><%= link_to 'Destroy', working_timetable, method: :delete, data: { confirm: 'Are you sure?' } %></td>

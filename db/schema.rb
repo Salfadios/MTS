@@ -11,14 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121209070012) do
+ActiveRecord::Schema.define(:version => 20121209133816) do
 
   create_table "doctors", :force => true do |t|
-    t.string   "full_name"
-    t.integer  "specialization_id"
-    t.integer  "time_limit"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.string   "fio"
+    t.integer  "specializationId"
+    t.integer  "duration"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   create_table "specializations", :force => true do |t|
@@ -35,12 +35,11 @@ ActiveRecord::Schema.define(:version => 20121209070012) do
   end
 
   create_table "tickets", :force => true do |t|
-    t.integer  "doctor_id"
-    t.integer  "user_id"
+    t.integer  "doctorId"
+    t.integer  "userId"
     t.string   "date"
-    t.string   "datetime"
-    t.integer  "status_id"
-    t.integer  "duration"
+    t.string   "time"
+    t.integer  "statusId"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -48,11 +47,10 @@ ActiveRecord::Schema.define(:version => 20121209070012) do
   create_table "users", :force => true do |t|
     t.string   "fio"
     t.string   "login"
-    t.integer  "status_id"
+    t.integer  "statusId"
     t.string   "password"
-    t.string   "last_login_date"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users_statuses", :force => true do |t|
@@ -61,24 +59,11 @@ ActiveRecord::Schema.define(:version => 20121209070012) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "work_days", :force => true do |t|
-    t.string   "doctor_full_name"
-    t.string   "time"
-    t.integer  "duration"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
-  end
-
-  create_table "work_weeks", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
   create_table "working_timetables", :force => true do |t|
-    t.integer  "doctor_id"
-    t.string   "working_time_json_hash"
-    t.datetime "created_at",             :null => false
-    t.datetime "updated_at",             :null => false
+    t.integer  "doctorId"
+    t.string   "workingTimeHash"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
 end

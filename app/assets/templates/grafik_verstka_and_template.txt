@@ -1,0 +1,29 @@
+
+		<!-- Табличка с графиками -->  
+		<table id="work-days" border="1">
+	    <tr>
+            <td id="wd_th_1"></td>
+            <td id="wd_th_2">
+				<div id="wd_th_sun" class="work-days">Sunday</div>
+			    <div id="wd_th_mon" class="work-days">Monday</div>
+				<div id="wd_th_tue" class="work-days">Tuesday</div>
+				<div id="wd_th_wed" class="work-days">Wednesday</div>
+				<div id="wd_th_thu" class="work-days">Thursday</div>
+				<div id="wd_th_fri" class="work-days">Friday</div>
+				<div id="wd_th_sat" class="work-days">Saturday</div>								
+			</td>
+        </tr>
+		</table>
+		
+		<!-- Темплейты для таблички с графиками -->  
+		<!--  темплейт для одной строки(одного доктора) work-days. -->
+		<script type="text/template" id="work-days-tr-doc-tamplate"> 
+			<tr id="wd_tr__<%=@doc_id %>" class="wd_tr__<%=@specialization_id %>">
+				<td id="wd_td_1__<%=@doc_id + "__" + @day%>"><%=@doc_fio %></td>
+				<td  id="wd_td_2__<%=@doc_id + "__" + @day%>" ><%=@div%></td>
+            </tr>
+		</script>   
+		<!-- темплейт для одного дня,  апендится к  td_2_doc__...   -->
+		<script type="text/template" id="work-days-day-tamplate"> 
+			<div id="wd_day__<%=@doc_id + "__" + @day%>" class="<%=@duration %>"><%=@day_timeline %></div>    
+		</script>                

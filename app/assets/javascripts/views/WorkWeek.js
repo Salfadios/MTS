@@ -2,6 +2,11 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 	template_week : JST["TemplateTrWeek"],
 	template_day : JST["TemplateDay"],
 	el : '#work-days',
+	events: 
+	{
+      'click #work-days' : 'showWorkDay'
+    },
+	
 	initialize : function()
 	{
 		days = new MTS.Collections.WorkWeeks();
@@ -9,6 +14,17 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 		doctors = new MTS.Collections.DoctorCollection();
 		doctors.fetch();
 		this.render();      
+	},
+	showWorkDay : function (e)
+	{
+		e = e || window.event;
+		var el = e.target || e.srcElement;
+		var doc_day = (el.id).split('__');
+		id_doc = doc_day[1];
+		day_name = doc_day[2];
+		alert(doc_day[1]);
+		alert(doc_day[2]);
+		
 	},
 	render: function()
 	{

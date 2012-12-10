@@ -2,7 +2,7 @@ MTS.Views.TicketCollectionView = Backbone.View.extend({
 	el: "body",
 	board: new MTS.Collections.TicketCollection(),
 	events: {
-		"click .hour":"addOne"
+		"click .quarter":"addOne"
 	},
 	initialize: function(){
 		this.board.on("reset", this.render, this);
@@ -32,8 +32,11 @@ MTS.Views.TicketCollectionView = Backbone.View.extend({
 	},
 	showOne: function(ticket){
 		var view = new MTS.Views.TicketViewSmall({model:ticket}),
-		time = view.model.get('time').split(':');
-		view.render(".app");
+		time = view.model.get('time').split(':'),
+		cont_id = "#ticket__" + ticket.get("doctorId") +
+			"__Mon__" + time[0] + "" + time[1];
+		view.render(cont_id);
+		console.log(ticket);
 	},
 	showAll: function(){
 		this.$("#table_time td").empty();

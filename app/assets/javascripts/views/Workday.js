@@ -21,10 +21,8 @@ MTS.Views.WorkDayView = Backbone.View.extend({
 	},
 	render : function()
 	{
-		var sp = '';
-		var time = day.get('ticket_time').split(':');
-		var from = day.get('from').split(':');
-        var to = day.get('to').split(':');				
+		var sp = '', dur = '', flag = 0;
+		var time = day.get('ticket_time').split(':'), from = day.get('from').split(':'), to = day.get('to').split(':'); 		
 		for(j = 0; j <= 8; j++)
 		{
 			time[1] = 0;
@@ -35,15 +33,22 @@ MTS.Views.WorkDayView = Backbone.View.extend({
 					time[1] ="00";
 				if(parseInt(time[0])>=parseInt(from[0])&&parseInt(time[0])<parseInt(to[0]))
 				{
-					day.set('ticket_time', time[0]+':' + time[1]);
+					day.set('ticket_time', time[0]+ ':' + time[1]);
+					dur = day.get('duration_class');
 					day.set('duration_class', day.get('duration_class')+' color_ticket');
+					flag = 1;
 				}
 				else
-					day.set('ticket_time', '-');
+					day.set('ticket_time', '-');	
 				if(parseInt(time[0])/10<1)
 					time[0]='0'+parseInt(time[0]);
 				day.set('ticket_t', time[0]+'' + time[1]);
 				sp += this.template_span(day.toJSON());
+				if(flag == 1)
+				{
+					day.set('duration_class', dur);
+					flag = 0;
+				}
 				duration = day.get('duration') + 0;
 				time[1] = parseInt(time[1]) + duration;
 			}

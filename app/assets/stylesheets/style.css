@@ -125,7 +125,7 @@ label {
 }
 
 
- .hour,  .half, .quarter, .work-days
+ .hour,  .half, .quarter, .work-days, .hour-day
  {
 	float:right; 
     margin-left:0px; 
@@ -137,7 +137,7 @@ label {
 {
 	 width: 77px;
 }
-.work-days, .hour
+.work-days, .hour, .hour-day
  {    
      border: 1px solid black;
      float: left;

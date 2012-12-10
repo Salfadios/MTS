@@ -12,10 +12,7 @@ MTS.Views.TicketViewSmall = Backbone.View.extend({
 	},
 	render: function(container){
 		//this.$el.html(this.template(this.model.toJSON()));
-		//console.log();
-		
-		$(container).empty();
-		$(container).append("<div class = 'ticket_in_tt'></div>");
+		$(container).css({"background-color":"#bbffff", "color":"#000000"});
 		return this;
 	}
 });

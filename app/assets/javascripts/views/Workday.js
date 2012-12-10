@@ -25,7 +25,7 @@ MTS.Views.WorkDayView = Backbone.View.extend({
 		var time = day.get('ticket_time').split(':');
 		var from = day.get('from').split(':');
         var to = day.get('to').split(':');				
-		for(j = 0; j <= 10; j++)
+		for(j = 0; j <= 8; j++)
 		{
 			time[1] = 0;
 			var count = this.getCount();

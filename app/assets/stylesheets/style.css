@@ -7,7 +7,7 @@
 	margin-left:auto;
 	margin-right:auto;
 	padding:0px;
-	width: 1225px;
+	width: 100%;
 	position:relative;
 }
 
@@ -99,7 +99,7 @@ label {
 
 #timetable {
 	background-color: #E6E6FA;
-	width:1225px
+	width:100%;
 
 }
 #work-days

@@ -1,3 +1,1 @@
-<script type = "text/template" id = "doctor-tamplate">
-	<p><%=@full_name%></p>
-</script>
+<%=@fio + " (" + @specializationId + ")"%>

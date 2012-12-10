@@ -1,8 +1,7 @@
 MTS.Models.Doctor = Backbone.Model.extend({
 	defaults:{
-		id: 0,
-		full_name: "none",
-		specialization: "none",
+		fio: "Ivanov",
+		specializationId: "1",
 		duration: 15
 	}
 });

@@ -1,12 +1,13 @@
 ﻿body {
 	background-color:#e5e5e5;
+		
 }
 
 .app {
 	margin-left:auto;
 	margin-right:auto;
 	padding:0px;
-	width:90%;
+	width: 1225px;
 	position:relative;
 }
 
@@ -92,37 +93,52 @@ label {
 
 #timetable {
 	background-color: #E6E6FA;
-	width:100%;
+	width:1225px
+
 }
-#timetable td.doc {
-	width:65px;
+#work-days
+{
+	background-color: #E6E6FA;
+	width:815px;
+	margin-left:auto;
+	margin-right:auto;
 }
-#timetable td {
+
+#work-days, #timetable td  {
 	color: white;
 	background-color: #8F8781;
 	font-weight:normal;
-	
+
 }
 
-#timetable div {
+#work-days, #timetable div {
 	text-align: center;
-	background-color: #00882D;
+	
 	color: white;
-	margin-right: 2px;
-	float: left;
+
 }
 
-#timetable .red {
-    background-color: red;
-}
 
- .hour
+ .hour,  .half, .quarter, .work-days
+ {
+	float:right; 
+    margin-left:0px; 
+	
+
+ }
+
+.doc
+{
+	 width: 77px;
+}
+.work-days, .hour
  {    
      border: 1px solid black;
      float: left;
      font-size: 16px;
-       width: 102px;
-	 }
+	 width: 102px;
+    
+}
   
   .half
   {    border: 1px solid black;
@@ -136,7 +152,7 @@ label {
       font-size: 10px;
      width: 24px;
 	  }
-#timetable td span.color_ticket
+#timetable td div.color_ticket
 {
 	background-color:#3300CC;
 }

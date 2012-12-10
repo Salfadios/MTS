@@ -21,7 +21,7 @@ Mts::Application.routes.draw do
 
 
   root to: "main#index"
-  resources :work_days
+ 
 
 
   resources :tickets

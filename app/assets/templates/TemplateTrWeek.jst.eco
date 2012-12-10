@@ -1,0 +1,4 @@
+<tr id="wd_tr__<%=@Doctorid %>" class="wd_tr__<%=@specialization_id %>">
+	<td class = "doc" id="wd_td_1__<%=@Doctorid + "__"%>"><%=@doc_fio %></td>
+	<td  id="wd_td_2__<%=@Doctorid%>"></td>
+</tr>

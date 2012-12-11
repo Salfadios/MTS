@@ -1,5 +1,5 @@
 MTS.Views.TicketCollectionView = Backbone.View.extend({
-	el: "body",
+	el: ".app",
 	board: new MTS.Collections.TicketCollection(),
 	events: {
 		"click .quarter":"addOne"
@@ -36,7 +36,6 @@ MTS.Views.TicketCollectionView = Backbone.View.extend({
 		cont_id = "#ticket__" + ticket.get("doctorId") +
 			"__Mon__" + time[0] + "" + time[1];
 		view.render(cont_id);
-		console.log(ticket);
 	},
 	showAll: function(){
 		this.$("#table_time td").empty();

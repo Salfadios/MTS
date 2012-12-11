@@ -2,7 +2,7 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 	template_week : JST["TemplateTrWeek"],
 	template_day : JST["TemplateDay"],
 	el : '#work-days',
-	//days : new MTS.Collections.WorkWeeks(),
+	
 	events: 
 	{
       'click .hour-day' : 'showWorkDay'
@@ -10,11 +10,12 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 	
 	initialize : function()
 	{
-		days = new MTS.Collections.WorkWeeks();
-		days.on("reset", this.render, this);
-		days.fetch();
-		doctors = new MTS.Collections.DoctorCollection();
-		doctors.fetch(); 
+		//days = new MTS.Collections.WorkWeeks();
+		days = MTS.Instances.SelectedDoctorsTT;
+		days.on("add", this.render, this);
+		//days.fetch();
+		//doctors = new MTS.Collections.DoctorCollection();
+		//doctors.fetch(); 
 	},
 	showWorkDay : function (e)
 	{
@@ -23,7 +24,7 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 		var doc_day = (el.id).split('__');
 		id_doc = doc_day[1];
 		day_name = doc_day[2];
-	
+		this.$el.empty();
 		for(i = 0; i < days.models.length;i++)
 		{
 			var day_time = days.models[i];

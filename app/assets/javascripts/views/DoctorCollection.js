@@ -1,4 +1,9 @@
 MTS.Views.DoctorCollectionView = Backbone.View.extend({
+	tagName:"ul",
+	id:"doctors_list",
+	events:	{
+		"click .doctor_list_item":"addDoctor"
+	},
 	docs: new MTS.Collections.DoctorCollection(),
 	initialize: function(){
 		this.docs.on("reset", this.render, this);
@@ -7,7 +12,6 @@ MTS.Views.DoctorCollectionView = Backbone.View.extend({
 	},
 	render:function()
 	{
-		console.log(this.docs.models);
 		this.showAll();
 	},
 	showOne: function(doctor){
@@ -15,7 +19,11 @@ MTS.Views.DoctorCollectionView = Backbone.View.extend({
 		view.render();
 	},
 	showAll: function(){
-		$("doctors_list").empty();
-		this.docs.each(this.showOne);
+		$("#doctors_list").empty();
+		_.each(this.docs.models, this.showOne, this);
+		console.log("Doctors have been renedered!");
+	},
+	addDoctor: function(){
+		
 	}
 });

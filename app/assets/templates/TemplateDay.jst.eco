@@ -1,1 +1,1 @@
-<div id="wd_day__<%=@Doctorid + "__" + @day%>" class="hour-day"><%=@time_line %></div>  
+<div id="wd_day__<%=@doctorId + "__" + @day%>" class="hour-day"><%=@time_line %></div>  

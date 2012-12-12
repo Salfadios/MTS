@@ -2,12 +2,10 @@
 
 one:
   fio: MyString
-  login: MyString
-  statusId: 1
-  password: MyString
+  email: MyString
+  password_digest: MyString
 
 two:
   fio: MyString
-  login: MyString
-  statusId: 1
-  password: MyString
+  email: MyString
+  password_digest: MyString

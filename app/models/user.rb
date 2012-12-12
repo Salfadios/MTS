@@ -1,3 +1,3 @@
 class User < ActiveRecord::Base
-  attr_accessible :fio, :login, :password, :statusId
+  attr_accessible :email, :fio, :password_digest
 end

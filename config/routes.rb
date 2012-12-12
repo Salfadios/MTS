@@ -1,4 +1,7 @@
 Mts::Application.routes.draw do
+  resources :users
+
+
   resources :users_statuses
 
 

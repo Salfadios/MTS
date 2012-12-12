@@ -1,5 +1,6 @@
 Mts::Application.routes.draw do
   resources :users
+  resources :sessions
 
 
   resources :users_statuses
@@ -9,9 +10,6 @@ Mts::Application.routes.draw do
 
 
   resources :specializations
-
-
-  resources :users
 
 
   resources :working_timetables

@@ -1,1 +1,1 @@
-<%=@name%>
+<div class = "spec_list_item" id = "spec__<%=@id%>"><%=@name%></div>

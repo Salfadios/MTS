@@ -17,7 +17,7 @@ class SpecializationsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @specialization }
+      format.json { render json: @specialization.doctor }
     end
   end
 

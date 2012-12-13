@@ -10,48 +10,67 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 	
 	initialize : function()
 	{
-		//days = new MTS.Collections.WorkWeeks();
 		days = MTS.Instances.SelectedDoctorsTT;
 		days.on("add", this.render, this);
-		//days.fetch();
-		//doctors = new MTS.Collections.DoctorCollection();
-		//doctors.fetch(); 
+	},
+	check : function()
+	{
+		if(collectionDays.models.length>0)
+		{
+		for(j = 0; j < collectionDays.models.length; j++)
+		{
+			var model = collectionDays.models[j];
+			if(model.get('doc_id') == id_doc)
+			{
+				alert("You have saw this doctor");
+				return true;
+			}
+		}
+		}
+	},
+	setModel : function()
+	{
+		var day_time = days.models[i];
+		if(day_time.get('doctorId') == id_doc)
+		{
+			w = JSON.parse(day_time.get('workingTimeHash'));
+			for(j = 0; j < w.length; j++)
+			{
+				if(w[j].day == day_name)
+				{
+					day.set('from', w[j].from);
+					day.set('to', w[j].to);
+				}
+			}	
+			day.set({duration: day_time.get('duration'),
+				     doc_fio: day_time.get('doc_fio'),
+					 doc_id: day_time.get('doctorId')});
+			if(this.check() != true) 
+				collectionDays.add(day);
+		}
+	},
+	getId: function(e)
+	{
+		day = new MTS.Models.WorkDay();
+		e = e || window.event;
+		var el = e.target || e.srcElement;
+		var doc_d = (el.id).split('__');
+		return doc_d ;
 	},
 	showWorkDay : function (e)
 	{
-		e = e || window.event;
-		var el = e.target || e.srcElement;
-		var doc_day = (el.id).split('__');
+		var doc_day = this.getId(e);
 		id_doc = doc_day[1];
 		day_name = doc_day[2];
-		this.$el.empty();
 		for(i = 0; i < days.models.length;i++)
 		{
-			var day_time = days.models[i];
-			if(day_time.get('doctorId')==id_doc)
-			{
-				w = JSON.parse(day_time.get('workingTimeHash'));
-				for(j = 0; j < w.length; j++)
-				{
-					if(w[j].day == day_name)
-					{
-						day.set('from', w[j].from);
-						day.set('to', w[j].to);
-					}
-				}
-				
-			}
-		}
-		var b = new MTS.Views.WorkDayView();
-		
+			this.setModel();
+		}		
 	},
 	render: function()
 	{
-		
-		for(i = 0; i < days.models.length;i++)
-		{
+		var	day_time = days.models[days.models.length-1];
 		var div = '';
-		var	day_time = days.models[i];
 		week = JSON.parse(day_time.get('workingTimeHash'));
 		for(j = 0; j < week.length; j++)
 		{
@@ -61,6 +80,6 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 		}
 		$(this.el).append(this.template_week(day_time.toJSON()));
 		$("#wd_td_2__" + day_time.get("doctorId")).append(div);
-		}
+		
 	}
 });

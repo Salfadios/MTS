@@ -65,5 +65,6 @@ MTS.Views.WorkDayView = Backbone.View.extend({
 		}
 		$(this.el_tr).append(this.template_tr(day.toJSON()));
 		$("#td_2_doc__" + day.get("doc_id") + "__" + day.get("data")).append(div);
+		MTS.Instances.AllTickets.render();
 	}
 });

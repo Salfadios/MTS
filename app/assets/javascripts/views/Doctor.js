@@ -32,8 +32,9 @@ MTS.Views.DoctorView = Backbone.View.extend({
 		tt.set({doc_fio: doc.get("fio"),
 			    doctorId: doc.id,
 				duration: doc.get("duration")});
-		tt.fetch();
-		MTS.Instances.SelectedDoctorsTT.add(tt);
+		tt.fetch({success:function() {
+			MTS.Instances.SelectedDoctorsTT.add(tt);
+		}});
 		console.log(MTS.Instances.SelectedDoctorsTT.models);
 	}
 });

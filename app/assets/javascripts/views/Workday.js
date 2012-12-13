@@ -32,7 +32,7 @@ MTS.Views.WorkDayView = Backbone.View.extend({
 		}
 		else
 		{
-			day.set('ticket_time', ' -');
+			day.set('ticket_time', '-');
 			return 0;
 		}
 	},

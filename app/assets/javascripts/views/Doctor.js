@@ -9,6 +9,11 @@ MTS.Views.DoctorView = Backbone.View.extend({
 		$("#doctors_list").append(this.el);
 		return this;
 	},
+	removeThisDoctorTT : function(doc)
+	{
+		model = MTS.Instances.SelectedDoctorsTT.where({id:doc.id});
+		MTS.Instances.SelectedDoctorsTT.remove(model);
+	},
 	addDoctor:function() {
 		if (!this.$el.attr("style"))
 		{
@@ -17,8 +22,8 @@ MTS.Views.DoctorView = Backbone.View.extend({
 		}
 		else
 		{
-			this.removeThisDoctorTT(this.model);
 			this.$el.removeAttr("style");
+			this.removeThisDoctorTT(this.model);
 		}
 	},
 	addThisDoctorTT: function(doc){
@@ -30,8 +35,5 @@ MTS.Views.DoctorView = Backbone.View.extend({
 		tt.fetch();
 		MTS.Instances.SelectedDoctorsTT.add(tt);
 		console.log(MTS.Instances.SelectedDoctorsTT.models);
-	},
-	removeThisDoctorTT: function(doc){
-		console.log(MTS.Instances.SelectedDoctorsTT.where({id:doc.id}));
 	}
 });

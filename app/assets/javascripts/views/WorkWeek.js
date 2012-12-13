@@ -1,8 +1,9 @@
 MTS.Views.WorkWeek = Backbone.View.extend({
 	template_week : JST["TemplateTrWeek"],
 	template_day : JST["TemplateDay"],
+	template_table : JST["TemplateTableWeek"],
 	el : '#work-days',
-	
+	el_table : '.app',
 	events: 
 	{
       'click .hour-day' : 'showWorkDay'
@@ -12,6 +13,8 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 	{
 		days = MTS.Instances.SelectedDoctorsTT;
 		days.on("add", this.render, this);
+		days.on("remove", this.deleteDoctor, this);
+		//this.showTable();
 	},
 	check : function()
 	{
@@ -67,9 +70,12 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 			this.setModel();
 		}		
 	},
-	render: function()
+	showTable: function()
 	{
-		var	day_time = days.models[days.models.length-1];
+		$(this.el_table).append(template_table());
+	},
+	render: function(day_time)
+	{
 		var div = '';
 		week = JSON.parse(day_time.get('workingTimeHash'));
 		for(j = 0; j < week.length; j++)
@@ -81,5 +87,13 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 		$(this.el).append(this.template_week(day_time.toJSON()));
 		$("#wd_td_2__" + day_time.get("doctorId")).append(div);
 		
+	},
+	deleteDoctor : function()
+	{
+	    this.$el.empty();
+		for(i = 0; i<MTS.Instances.SelectedDoctorsTT.models.length; i++)
+		{
+			this.render(MTS.Instances.SelectedDoctorsTT.models[i]);
+		}
 	}
 });

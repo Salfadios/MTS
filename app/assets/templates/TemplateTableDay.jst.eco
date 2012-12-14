@@ -1,0 +1,15 @@
+<tr>
+ <td id="timetable_th_1"></td>
+    <td id="timetable_th_2" >
+		<div id="ticket_th__0800" class="hour">08:00</div>
+		<div id="ticket_th__0900" class="hour">09:00</div>
+		<div id="ticket_th__1000" class="hour">10:00</div>
+		<div id="ticket_th__1100" class="hour">11:00</div>
+		<div id="ticket_th__1200" class="hour">12:00</div>
+		<div id="ticket_th__1300" class="hour">13:00</div>
+		<div id="ticket_th__1400" class="hour">14:00</div>
+		<div id="ticket_th__1500" class="hour">15:00</div>
+		<div id="ticket_th__1600" class="hour">16:00</div>
+	</td>
+</tr>
+	

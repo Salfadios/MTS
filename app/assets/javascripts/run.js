@@ -10,7 +10,7 @@ $(function(){
 	
 	var t = new MTS.Views.WorkWeek();
 	
-	collectionDays = new MTS.Collections.WorkDayCollection();
+	MTS.Instances.collectionDays = new MTS.Collections.WorkDayCollection();
 	var t1 = new MTS.Views.WorkDayView();
 	
 	MTS.Instances.AllTickets = new MTS.Views.TicketCollectionView();

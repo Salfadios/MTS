@@ -13,6 +13,13 @@ MTS.Views.DoctorView = Backbone.View.extend({
 	{
 		model = MTS.Instances.SelectedDoctorsTT.where({id:doc.id});
 		MTS.Instances.SelectedDoctorsTT.remove(model);
+		modelDay = MTS.Instances.collectionDays.where({doc_id:doc.id});
+		MTS.Instances.collectionDays.remove(modelDay);
+		for(var key in arreyAttr)
+		{
+			delete arreyAttr[doc.id];
+		}
+			
 	},
 	addDoctor:function() {
 		if (!this.$el.attr("style"))

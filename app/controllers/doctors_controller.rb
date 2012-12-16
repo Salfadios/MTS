@@ -21,6 +21,13 @@ class DoctorsController < ApplicationController
     end
   end
 
+  def showticket
+    @doctor = Doctor.find(params[:id])
+
+    respond_to do |format|      
+      format.json { render json: @doctor.ticket }
+    end
+  end
   # GET /doctors/new
   # GET /doctors/new.json
   def new

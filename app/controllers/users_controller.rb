@@ -21,6 +21,13 @@ class UsersController < ApplicationController
     end
   end
 
+  def showticket
+    @user = User.find(params[:id])
+
+    respond_to do |format|      
+      format.json { render json: @user.ticket }
+    end
+  end
   # GET /users/new
   # GET /users/new.json
   def new

@@ -5,7 +5,6 @@
 #layout {
     border: 0 solid red;
     margin: 0 auto;
-    max-width: 1154px;
     min-width: 800px;
     padding: 0 35px 0 60px;
     text-align: left;
@@ -16,18 +15,20 @@
     padding-top: 10px;
     position: relative;    
 	border-bottom: 1px solid #CCCCCC;
+	width: 100%;
 }
 
 .content_left {
     float: left;
     margin-right: 2%;
-    width: 65.5%;
+    width: 90%;
 }
 
-.sidebar_right {
-    position: relative;
-	float: left;
-    width: 32.5%;
+.content_right {
+    #position: relative;
+	float: right;
+	text-align:left;
+    width: 10%;
 }
 
 .clear {
@@ -43,6 +44,7 @@
     margin-top: 15px;
     overflow: hidden;
     padding-top: 30px;
+	width: 100%;
 }
 
 #container { 
@@ -60,7 +62,7 @@
 <div id="layout">
 	<div id="header">
 		<div id="logo">
-		    <a class="brand" href="#"><h1>Medical Ticket Service</h1></a>
+		    <a class="brand" href="/"><h1>Medical Ticket Service</h1></a>
 		</div>
 		
 		<div id="container">
@@ -84,7 +86,20 @@
 		<%= yield %>
 	</div>
 
-	<div class="sidebar_right">
+	<div class="content_right">
+			<h3>Ordered tickets</h3>
+
+				<table>
+				  <tr>
+					<th>Fio</th>
+					<th>Specialization_id</th>
+					<th>Duration</th>
+					<th></th>
+					<th></th>
+					<th></th>
+				  </tr>
+				
+			</table>
 	</div>
 	<div class="clear"></div>
 

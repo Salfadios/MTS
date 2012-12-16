@@ -2,10 +2,10 @@
 
 one:
   fio: MyString
-  specializationId: 1
+  specialization_id: 1
   duration: 1
 
 two:
   fio: MyString
-  specializationId: 1
+  specialization_id: 1
   duration: 1

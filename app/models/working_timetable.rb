@@ -1,3 +1,3 @@
 class WorkingTimetable < ActiveRecord::Base
-  attr_accessible :doctorId, :workingTimeHash
+  attr_accessible :doctor_id, :workingTimeHash
 end

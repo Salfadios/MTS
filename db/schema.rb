@@ -15,10 +15,10 @@ ActiveRecord::Schema.define(:version => 20121212211146) do
 
   create_table "doctors", :force => true do |t|
     t.string   "fio"
-    t.integer  "specializationId"
+    t.integer  "specialization_id"
     t.integer  "duration"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
   end
 
   create_table "specializations", :force => true do |t|
@@ -35,11 +35,11 @@ ActiveRecord::Schema.define(:version => 20121212211146) do
   end
 
   create_table "tickets", :force => true do |t|
-    t.integer  "doctorId"
-    t.integer  "userId"
+    t.integer  "doctor_id"
+    t.integer  "user_id"
     t.string   "date"
     t.string   "time"
-    t.integer  "statusId"
+    t.integer  "status_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(:version => 20121212211146) do
   end
 
   create_table "working_timetables", :force => true do |t|
-    t.integer  "doctorId"
+    t.integer  "doctor_id"
     t.string   "workingTimeHash"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false

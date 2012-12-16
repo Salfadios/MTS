@@ -33,7 +33,7 @@ MTS.Views.TicketCollectionView = Backbone.View.extend({
 	showOne: function(ticket){
 		var view = new MTS.Views.TicketViewSmall({model:ticket}),
 		time = view.model.get('time').split(':'),
-		cont_id = "#ticket__" + ticket.get("doctorId") +
+		cont_id = "#ticket__" + ticket.get("doctor_id") +
 			"__Mon__" + time[0] + "" + time[1];
 		view.render(cont_id);
 	},

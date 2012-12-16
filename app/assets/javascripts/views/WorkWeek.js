@@ -22,7 +22,7 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 	setModel : function(day_time)
 	{
 		day = new MTS.Models.WorkDay();
-		if(day_time.get('doctorId') == id_doc || id_doc == 'th')
+		if(day_time.get('doctor_id') == id_doc || id_doc == 'th')
 		{
 			w = JSON.parse(day_time.get('workingTimeHash'));
 			for(var j = 0; j < w.length; j++)
@@ -35,7 +35,7 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 			}	
 			day.set({duration: day_time.get('duration'),
 				     doc_fio: day_time.get('doc_fio'),
-					 doc_id: day_time.get('doctorId'),
+					 doc_id: day_time.get('doctor_id'),
 					 data: day_name});
 			MTS.Instances.collectionDays.add(day);
 		}
@@ -88,7 +88,7 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 			div += this.template_day(day_time.toJSON());
 		}
 		$(this.el).append(this.template_week(day_time.toJSON()));
-		$("#wd_td_2__" + day_time.get("doctorId")).append(div);
+		$("#wd_td_2__" + day_time.get("doctor_id")).append(div);
 		
 	},
 	

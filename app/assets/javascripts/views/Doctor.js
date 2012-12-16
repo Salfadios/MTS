@@ -37,7 +37,7 @@ MTS.Views.DoctorView = Backbone.View.extend({
 		var tt = new MTS.Models.WorkWeek();
 		tt.url = "/working_timetables/" + doc.id;
 		tt.set({doc_fio: doc.get("fio"),
-			    doctorId: doc.id,
+			    doctor_id: doc.id,
 				duration: doc.get("duration")});
 		tt.fetch({success:function() {
 			MTS.Instances.SelectedDoctorsTT.add(tt);

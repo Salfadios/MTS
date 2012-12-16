@@ -1,15 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  doctorId: 1
-  userId: 1
+  doctor_id: 1
+  user_id: 1
   date: MyString
   time: MyString
   statusId: 1
 
 two:
-  doctorId: 1
-  userId: 1
+  doctor_id: 1
+  user_id: 1
   date: MyString
   time: MyString
   statusId: 1

@@ -2,8 +2,8 @@
 
 <table>
   <tr>
-    <th>Doctorid</th>
-    <th>Userid</th>
+    <th>Doctor_id</th>
+    <th>User_id</th>
     <th>Date</th>
     <th>Time</th>
     <th>Statusid</th>
@@ -14,8 +14,8 @@
 
 <% @tickets.each do |ticket| %>
   <tr>
-    <td><%= ticket.doctorId %></td>
-    <td><%= ticket.userId %></td>
+    <td><%= ticket.doctor_id %></td>
+    <td><%= ticket.user_id %></td>
     <td><%= ticket.date %></td>
     <td><%= ticket.time %></td>
     <td><%= ticket.statusId %></td>

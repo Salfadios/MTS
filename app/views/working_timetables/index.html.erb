@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th>Doctorid</th>
+    <th>Doctor_id</th>
     <th>Workingtimehash</th>
     <th></th>
     <th></th>
@@ -11,7 +11,7 @@
 
 <% @working_timetables.each do |working_timetable| %>
   <tr>
-    <td><%= working_timetable.doctorId %></td>
+    <td><%= working_timetable.doctor_id %></td>
     <td><%= working_timetable.workingTimeHash %></td>
     <td><%= link_to 'Show', working_timetable %></td>
     <td><%= link_to 'Edit', edit_working_timetable_path(working_timetable) %></td>

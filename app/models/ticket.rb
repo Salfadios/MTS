@@ -1,3 +1,5 @@
 class Ticket < ActiveRecord::Base
-  attr_accessible :date, :doctorId, :statusId, :time, :userId
+  belongs_to :user
+  
+  attr_accessible :date, :doctor_id, :statusId, :time, :user_id
 end

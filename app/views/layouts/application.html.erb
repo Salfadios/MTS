@@ -1,47 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+#layout {
+    border: 0 solid red;
+    margin: 0 auto;
+    max-width: 1154px;
+    min-width: 800px;
+    padding: 0 35px 0 60px;
+    text-align: left;
+}
+
+#header {
+    padding-bottom: 24px;
+    padding-top: 10px;
+    position: relative;    
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.content_left {
+    float: left;
+    margin-right: 2%;
+    width: 65.5%;
+}
+
+.sidebar_right {
+    position: relative;
+	float: left;
+    width: 32.5%;
+}
+
+.clear {
+    clear: both;
+}
+
+#footer {
+    border-top: 1px solid #CCCCCC;
+    color: #949494;
+    font-family: Tahoma,Arial;
+    font-size: 11px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+#container { 
+    padding: 3px; 
+	text-align: right;
+}
+</style>
   <title>MTS</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-          <div id="container">
-      <div id="user_header">
-        <% if current_user %>
-          Logged in as <%= current_user.email %>.
-          <%= link_to "Log Out", logout_path %>
-        <% else %>
-          <%= link_to "Sign Up", signup_path %> or
-          <%= link_to "Log In", login_path %>
-        <% end %>
-      </div>
 
-      <% flash.each do |name, msg| %>
-        <%= content_tag :div, msg, id: "flash_#{name}" %>
-      <% end %>
+<div id="layout">
+	<div id="header">
+		<div id="logo">
+		    <a class="brand" href="#"><h1>Medical Ticket Service</h1></a>
+		</div>
+		
+		<div id="container">
+			  <div id="user_header">
+				<% if current_user %>
+				  Logged in as <%= current_user.email %>.
+				  <%= link_to "Log Out", logout_path %>
+				<% else %>
+				  <%= link_to "Sign Up", signup_path %> or
+				  <%= link_to "Log In", login_path %>
+				<% end %>
+			  </div>
 
-      
-    </div>
-<div class="navbar">
-  <div class="navbar-inner">
-    <a class="brand" href="#">Project MTS</a>
-    <ul class="nav">
-      <li class="active"><a href="/">Home</a></li>
-      <li><a href="/doctors">Doctors</a></li>
-	  <li><a href="/tickets"</a>Tickets</li>
-	  <li><a href="/working_timetables">Working_timetables</a></li>
-	  <li><a href="/users">Users</a></li>
-      <li><a href="/specializations">Specializations</a></li>
-	  <li><a href="/ticket_statuses">Ticket_statuses</a></li>	  
-	  <li><a href="/users_statuses">Users_statuses</a></li>
-    </ul>
-  </div>
+			  <% flash.each do |name, msg| %>
+				<%= content_tag :div, msg, id: "flash_#{name}" %>
+			  <% end %>      
+		</div>
+	</div>
+
+	<div class="content_left">
+		<%= yield %>
+	</div>
+
+	<div class="sidebar_right">
+	</div>
+	<div class="clear"></div>
+
+	<div id="footer">
+	
+			<div class="navbar">
+				  <div class="navbar-inner">
+
+					<ul class="nav">
+					  <li class="active"><a href="/">Home</a></li>
+					  <li><a href="/doctors">Doctors</a></li>
+					  <li><a href="/tickets"</a>Tickets</li>
+					  <li><a href="/working_timetables">Working_timetables</a></li>
+					  <li><a href="/users">Users</a></li>
+					  <li><a href="/specializations">Specializations</a></li>
+					  <li><a href="/ticket_statuses">Ticket_statuses</a></li>	  
+					  <li><a href="/users_statuses">Users_statuses</a></li>
+					</ul>
+				  </div>
+				</div>
+			<div class="elki">
+				<center style='padding-top: 40px;'><img width="25%" height="89" src="/assets/elki_6de.gif" alt="new year 2013"><img width="25%" height="89" src="/assets/elki2_6de.gif" alt="new year 2013"><img width="25%" height="89" src="/assets/elki_6de.gif" alt="new year 2013"><img width="25%" height="89" src="/assets/elki2_6de.gif" alt="new year 2013">	</center>
+			</div>
+	</div>
 </div>
-<%= yield %>
-
-<center style='padding-top: 40px;'><img width="25%" height="89" src="/assets/elki_6de.gif" alt="new year 2013"><img width="25%" height="89" src="/assets/elki2_6de.gif" alt="new year 2013"><img width="25%" height="89" src="/assets/elki_6de.gif" alt="new year 2013"><img width="25%" height="89" src="/assets/elki2_6de.gif" alt="new year 2013">
-	</center>
 </body>
 </html>

@@ -17,10 +17,21 @@ class SpecializationsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @specialization.doctor }
+      format.json { render json: @specialization }
     end
   end
 
+    # GET /specializations/1
+  # GET /specializations/1.json
+  def showdoctors
+    @specialization = Specialization.find(params[:id])
+
+    respond_to do |format|
+      #format.html # show.html.erb
+      format.json { render json: @specialization.doctor }
+    end
+  end
+  
   # GET /specializations/new
   # GET /specializations/new.json
   def new

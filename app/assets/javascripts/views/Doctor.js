@@ -9,26 +9,21 @@ MTS.Views.DoctorView = Backbone.View.extend({
 		$("#doctors_list").append(this.el);
 		return this;
 	},
-	removeThisDoctorTT : function(doc)
-	{
+	removeThisDoctorTT : function(doc) {
 		model = MTS.Instances.SelectedDoctorsTT.where({id:doc.id});
 		MTS.Instances.SelectedDoctorsTT.remove(model);
 		modelDay = MTS.Instances.collectionDays.where({doc_id:doc.id});
 		MTS.Instances.collectionDays.remove(modelDay);
-		for(var key in arreyAttr)
-		{
-			delete arreyAttr[doc.id];
-		}
-			
+		for (var key in arreyAttr) {
+			for (var i = 0; i < modelDay.length; i++)
+				delete arreyAttr['wd_day__' + doc.id + "__" + modelDay[i].get('data')];
+		}			
 	},
 	addDoctor:function() {
-		if (!this.$el.attr("style"))
-		{
+		if (!this.$el.attr("style")) {
 			this.addThisDoctorTT(this.model);
 			this.$el.css("background-color","lime");
-		}
-		else
-		{
+		} else {
 			this.$el.removeAttr("style");
 			this.removeThisDoctorTT(this.model);
 		}

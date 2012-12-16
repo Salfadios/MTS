@@ -8,10 +8,9 @@ $(function(){
 	MTS.Instances.SelectedDoctorsTT = new MTS.Collections.WorkWeeks();
 	//Work day view test
 	
-	var t = new MTS.Views.WorkWeek();
-	
+	var table_week = new MTS.Views.WorkWeek();
 	MTS.Instances.collectionDays = new MTS.Collections.WorkDayCollection();
-	var t1 = new MTS.Views.WorkDayView();
-	
+	var table_day = new MTS.Views.WorkDayView();
+	var week_event = new MTS.Views.Week();
 	MTS.Instances.AllTickets = new MTS.Views.TicketCollectionView();
 });

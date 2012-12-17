@@ -3,8 +3,8 @@ MTS.Views.DoctorCollectionView = Backbone.View.extend({
 	id:"doctors_list",
 	docs: new MTS.Collections.DoctorCollection(),
 	initialize: function(){
-		this.docs.on("reset", this.render, this);
-		this.docs.fetch();
+		this.docs.on("all", this.render, this);
+		//this.docs.fetch();
 		console.log("Doctors collection initialized!");
 	},
 	render:function()

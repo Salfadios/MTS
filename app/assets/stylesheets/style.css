@@ -129,18 +129,22 @@ label {
 	 width: 102px;
     
 }
-  
+.hour
+{
+	width: 10%;
+}  
   .half
   {    border: 1px solid black;
       float: left;
       font-size: 10px;
-      width: 50px;
+      width: 5%;
+	   height: 20px;
 	 }
   .quarter
   {    border: 1px solid black;
       float: left;
       font-size: 10px;
-     width: 24px;
+     width: 2.37%;
 	 height: 20px;
 	  }
 #timetable td div.color_ticket

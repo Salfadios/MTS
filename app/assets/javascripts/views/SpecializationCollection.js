@@ -22,7 +22,7 @@ MTS.Views.SpecializationCollectionView = Backbone.View.extend({
 		this.specs.each(this.showOne);
 	},
 	clickSpec: function(e) {
-		var id = e.target.id.split("__")[1];
+		var id = parseInt(e.target.id.split("__")[1]);
 		
 		if (!$(e.target).attr("style"))
 		{
@@ -31,20 +31,22 @@ MTS.Views.SpecializationCollectionView = Backbone.View.extend({
 		}
 		else
 		{
-			this.removeThisSpecDoctor();
+			this.removeThisSpecDoctor(id);
 			$(e.target).removeAttr("style");
 		}
 	},
 	addThisSpecDoctor: function(spec_id){
 		var spec = new MTS.Collections.DoctorCollection();
-		spec.url = "/specializations/" + spec_id;
+		spec.url = "specializations/showdoctors/" + spec_id + ".json"
 		spec.fetch({success:function() {
-			MTS.Instances.SelectedSpecDoctors.add(spec);
+			MTS.Instances.AllDoctors.docs.add(spec.models);
+			console.log(spec);
 		}});
 	},
 	removeThisSpecDoctor : function(spec_id)
 	{
-		var models = MTS.Instances.SelectedSpecDoctors.where({id:spec_id});
-		MTS.Instances.SelectedSpecDoctors.remove(models);
+		var models = MTS.Instances.AllDoctors.docs.where({specialization_id:spec_id});
+		console.log(models);
+		MTS.Instances.AllDoctors.docs.remove(models);
 	}
 });

@@ -24,12 +24,16 @@ class TicketsController < ApplicationController
   # GET /tickets/new
   # GET /tickets/new.json
   def new
+  if session[:user_id] != nil
     @ticket = Ticket.new
 
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @ticket }
     end
+  else
+  redirect_to root_url, notice:"ERROR!!! No Session - NO TICKET!!!"
+	end
   end
 
   # GET /tickets/1/edit
@@ -40,17 +44,24 @@ class TicketsController < ApplicationController
   # POST /tickets
   # POST /tickets.json
   def create
-    @ticket = Ticket.new(params[:ticket])
+    if session[:user_id] != nil
+      @ticket = Ticket.new(params[:ticket])
 
-    respond_to do |format|
-      if @ticket.save
-        format.html { redirect_to @ticket, notice: 'Ticket was successfully created.' }
-        format.json { render json: @ticket, status: :created, location: @ticket }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @ticket.errors, status: :unprocessable_entity }
+      respond_to do |format|
+        if @ticket.save
+          format.html { redirect_to @ticket, notice: 'Ticket was successfully created.' }
+          format.json { render json: @ticket, status: :created, location: @ticket }
+        else
+          format.html { render action: "new" }
+          format.json { render json: @ticket.errors, status: :unprocessable_entity }
+        end
       end
-    end
+	else
+		respond_to do |format|
+          format.html { redirect_to tickets_url , notice: "ERROR!!! No Session - NO TICKET!!!"}
+          format.json { render json: "ERROR!!! No Session - NO TICKET!!!",  notice: "ERROR!!! No Session - NO TICKET!!!"}				
+		end
+	end
   end
 
   # PUT /tickets/1
@@ -72,6 +83,7 @@ class TicketsController < ApplicationController
   # DELETE /tickets/1
   # DELETE /tickets/1.json
   def destroy
+  if session[:user_id] != nil
     @ticket = Ticket.find(params[:id])
     @ticket.destroy
 
@@ -79,5 +91,8 @@ class TicketsController < ApplicationController
       format.html { redirect_to tickets_url }
       format.json { head :no_content }
     end
+	  else
+		redirect_to root_url, notice:"ERROR!!! No Session - NO TICKET!!!"
+	end
   end
 end

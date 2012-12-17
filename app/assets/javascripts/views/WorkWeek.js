@@ -24,7 +24,7 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 			div += this.template_day(day_time.toJSON());
 		}
 		$(this.el).append(this.template_week(day_time.toJSON()));
-		$("#wd_td_2__" + day_time.get("doctorId")).append(div);
+		$("#wd_td_2__" + day_time.get("doctor_id")).append(div);
 	},
 	
 	show: function() {

@@ -19,7 +19,7 @@ MTS.Views.DoctorView = Backbone.View.extend({
 				delete arreyAttr['wd_day__' + doc.id + "__" + modelDay[i].get('data')];
 		}			
 	},
-	addDoctor:function() {
+	addDoctor: function() {
 		if (!this.$el.attr("style")) {
 			this.addThisDoctorTT(this.model);
 			this.$el.css("background-color","lime");

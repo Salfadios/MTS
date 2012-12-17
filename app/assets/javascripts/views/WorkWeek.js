@@ -2,6 +2,7 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 	template_week: JST["TemplateTrWeek"],
 	template_day: JST["TemplateDay"],
 	template_table: JST["TemplateTableWeek"],
+	template_head: JST["templateWeekHead"],
 	el: '#work-days',
 	
 	initialize: function() {
@@ -12,15 +13,23 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 	},
 	
 	showTable: function() {
+	
 		$(this.el).append(this.template_table);
 	},
 	
 	render: function(day_time) {
 		var div = '';
+		var data = new Date();
+		var day = data.getDate();
+		var month = data.getMonth() + 1;
+		var year = data.getFullYear();
+		var day_week = data.getDay();
 		week = JSON.parse(day_time.get('workingTimeHash'));
+		day = day - day_week;
 		for (var j = 0; j < week.length; j++) {
 			day_time.set('time_line', week[j].from + '-' + week[j].to);
-			day_time.set('day', week[j].day);
+			day_time.set('day', day + "-" + month + "-" + year);
+			day = day + 1;
 			div += this.template_day(day_time.toJSON());
 		}
 		$(this.el).append(this.template_week(day_time.toJSON()));

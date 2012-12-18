@@ -1,6 +1,5 @@
 class CreateWorkingTimetables < ActiveRecord::Migration
-  def change	
-    drop_table :working_timetables
+  def change
     create_table :working_timetables do |t|
       t.integer :doctor_id
       t.string :workingTimeHash

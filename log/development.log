@@ -10238,6 +10238,7 @@ Started POST "/tickets" for 127.0.0.1 at 2012-12-18 21:30:50 +0200
 Processing by TicketsController#create as JSON
   Parameters: {"ticket_number"=>0, "user"=>"none", "address"=>"none", "doctor"=>"none", "date"=>"19-12-2012", "time"=>"15:45", "coord_x"=>0, "coord_y"=>0, "user_id"=>1, "doctor_id"=>"1", "ticket"=>{"date"=>"19-12-2012", "doctor_id"=>"1", "time"=>"15:45", "user_id"=>1}}
 Completed 200 OK in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+<<<<<<< HEAD
 
 
 Started GET "/sessions" for 127.0.0.1 at 2012-12-18 21:38:55 +0200
@@ -14741,3 +14742,46 @@ Completed 200 OK in 31ms (Views: 15.6ms | ActiveRecord: 0.0ms)
 
 Started GET "/assets/elki2_6de.gif" for 127.0.0.1 at 2012-12-18 22:44:51 +0200
 Served asset /elki2_6de.gif - 304 Not Modified (0ms)
+=======
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (62.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (74.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateDoctors (20121209133044)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "doctors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fio" varchar(255), "specialization_id" integer, "duration" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121209133044')[0m
+  [1m[35m (82.0ms)[0m  commit transaction
+Migrating to CreateTickets (20121209133060)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "tickets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "doctor_id" integer, "user_id" integer, "date" varchar(255), "time" varchar(255), "status_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121209133060')[0m
+  [1m[35m (70.0ms)[0m  commit transaction
+Migrating to CreateWorkingTimetables (20121209133650)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "working_timetables" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "doctor_id" integer, "workingTimeHash" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121209133650')[0m
+  [1m[35m (50.0ms)[0m  commit transaction
+Migrating to CreateSpecializations (20121209133741)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "specializations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121209133741')[0m
+  [1m[35m (78.0ms)[0m  commit transaction
+Migrating to CreateTicketStatuses (20121209133757)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "ticket_statuses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "desc" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121209133757')[0m
+  [1m[35m (53.0ms)[0m  commit transaction
+Migrating to CreateUsersStatuses (20121209133816)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "users_statuses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121209133816')[0m
+  [1m[35m (53.0ms)[0m  commit transaction
+Migrating to CreateUsers (20121212211146)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fio" varchar(255), "email" varchar(255), "password_digest" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121212211146')[0m
+  [1m[35m (59.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+>>>>>>> 76c6dd83b490277072c8b538a52a6d7dda5feca3

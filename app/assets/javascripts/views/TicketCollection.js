@@ -34,7 +34,7 @@ MTS.Views.TicketCollectionView = Backbone.View.extend({
 			doctor_id: info[1],
 			date: info[2],
 			time: this.getTime(info[3])
-		});
+		},{wait: true});
 	},
 	getTime: function(num){
 		hours = Math.floor(num/100),

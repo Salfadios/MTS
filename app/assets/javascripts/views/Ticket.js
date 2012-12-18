@@ -5,7 +5,7 @@ MTS.Views.TicketViewSmall = Backbone.View.extend({
 		"dblclick .ticket_small":"deleteTicket"
 	},
 	deleteTicket: function(){
-		this.model.destroy();
+		this.model.destroy({wait: true});
 	},
 	render: function(container){
 		this.$el.html(this.template(this.model.toJSON()));

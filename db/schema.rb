@@ -60,7 +60,7 @@ ActiveRecord::Schema.define(:version => 20121212211146) do
 
   create_table "working_timetables", :force => true do |t|
     t.integer  "doctor_id"
-    t.string   "workingTimeHash"
+    t.text     "workingTimeHash"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
   end

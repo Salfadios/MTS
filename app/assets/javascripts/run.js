@@ -13,4 +13,7 @@ $(function(){
 	var table_day = new MTS.Views.WorkDayView();
 	var week_event = new MTS.Views.Week();
 	MTS.Instances.AllTickets = new MTS.Views.TicketCollectionView();
+	//User test
+	MTS.Instances.User = 
+		new MTS.Models.User();
 });

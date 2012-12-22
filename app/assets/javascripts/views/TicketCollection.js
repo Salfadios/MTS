@@ -1,5 +1,6 @@
 MTS.Views.TicketCollectionView = Backbone.View.extend({
 	el: ".app",
+	el_right: ".content_right",
 	board: new MTS.Collections.TicketCollection(),
 	events: {
 		"click .quarter, .half":"addOne",
@@ -15,15 +16,17 @@ MTS.Views.TicketCollectionView = Backbone.View.extend({
 				user_id: 1,
 				doctor_id: parseInt(ticket_data[1]),
 				date: ticket_data[2]
-			});
-		console.log(ticket_data);	
+			});	
 		if (ticket_data[0] !== "" &&
 			$(e.target).hasClass("color_ticket"))
 		{
-			console.log(another_ticket.length);
 			if (another_ticket.length === 0)
 			{
 				this.createNewTicket(ticket_data);
+			}
+			else
+			{
+				console.log("You have already reserved a ticket to this doctor!");
 			}
 		}
 	},
@@ -44,7 +47,8 @@ MTS.Views.TicketCollectionView = Backbone.View.extend({
 		return hours + ":" + minutes;
 	},
 	render:function(){
-		$(".quarter, .half").empty();
+		$(".quarter, .half, .content_right").empty();
+		this.showAllOwn();
 		this.showAll();
 	},
 	showOne: function(ticket){
@@ -58,5 +62,20 @@ MTS.Views.TicketCollectionView = Backbone.View.extend({
 	showAll: function(){
 		this.$("#table_time td").empty();
 		this.board.each(this.showOne);
+	},
+	showOwnTickets: function() {
+		var id = 1;
+		var own_tickets = this.board.where({user_id:id});
+		console.log("My own tickets:");
+		console.log(own_tickets);
+	},
+	showOneOwn: function (ticket) {
+		var view = new MTS.Views.TicketView({model:ticket});
+		console.log(ticket);
+		view.render();
+	},
+	showAllOwn: function () {
+		var id = 1;
+		_.each(this.board.where({user_id:id}), this.showOneOwn);
 	}
 });

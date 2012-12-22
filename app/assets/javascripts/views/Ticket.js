@@ -1,16 +1,14 @@
-MTS.Views.TicketViewSmall = Backbone.View.extend({
-	tagName: "div",
-	template: JST["TicketSmall"],
+MTS.Views.TicketView = Backbone.View.extend({
+	template: JST["Ticket"],
 	events: {
-		"dblclick .ticket_small":"deleteTicket"
+		"dblclick .ticket":"deleteTicket"
 	},
 	deleteTicket: function(){
 		this.model.destroy({wait: true});
 	},
-	render: function(container){
+	render: function(){
 		this.$el.html(this.template(this.model.toJSON()));
-		$(container).empty();
-		$(container).append(this.el);
+		$(".content_right").append(this.el);
 		return this;
 	}
 });

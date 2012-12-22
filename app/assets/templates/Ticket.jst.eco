@@ -1,21 +1,15 @@
-<script type = "text/template" id = "ticket-tamplate">
-	<div class = "ticket" style = "left:<%=coord_x%>; top:<%=coord_y%>;">
-		<b class = "ticket-title">Ticket No.<%=ticket_number%></b>
-		<p class = "ticket-line">
-			<label>Patient:</label>
-			<%=user%>
-		</p>
-		<p class = "ticket-line">
-			<label>Address:</label>
-			<%=address%>
-		</p>
-		<p class = "ticket-line">
-			<label>Doctor:</label>
-			<%=doctor + " (cab." + 308 + ")"%>
-		</p>
-		<p class = "ticket-line">
-			<label>Date/time:</label>
-			<%=date + "/" + time%>
-		</p>
-	</div>
-</script>
+<div class = "ticket">
+	<b class = "ticket-title">Ticket</b>
+	<p class = "ticket-line">
+		<label>Patient:</label><%= @user %>
+	</p>
+	<p class = "ticket-line">
+		<label>Address:</label><%= @address %>
+	</p>
+	<p class = "ticket-line">
+		<label>Doctor:</label><%= @doctor + " (cab." + 308 + ")"%>
+	</p>
+	<p class = "ticket-line">
+		<label>Date/time:</label><%= @date + "/" + @time%>
+	</p>
+</div>

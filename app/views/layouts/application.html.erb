@@ -3,10 +3,9 @@
 <head>
 <style>
 #layout {
-    border: 0 solid red;
     margin: 0 auto;
     min-width: 800px;
-    padding: 0 35px 0 60px;
+    padding: 0 30px 0 30px;
     text-align: left;
 }
 
@@ -16,23 +15,6 @@
     position: relative;    
 	border-bottom: 1px solid #CCCCCC;
 	width: 100%;
-}
-
-.content_left {
-    float: left;
-    margin-right: 2%;
-    width: 90%;
-}
-
-.content_right {
-    #position: relative;
-	float: right;
-	text-align:left;
-    width: 10%;
-}
-
-.clear {
-    clear: both;
 }
 
 #footer {
@@ -47,93 +29,82 @@
 	width: 100%;
 }
 
-#container { 
-    padding: 3px; 
-	text-align: right;
-}
 </style>
-  <title>MTS</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<title>MTS</title>
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
 
 <div id="layout">
-	<div id="header">
-		<div id="logo">
-		    <a class="brand" href="/"><h1>Medical Ticket Service</h1></a>
-		</div>
-		
-		<div id="container">
-			  <div id="user_header">
+	<div id="header" class = "container-fluid">
+		<div class = "row-fluid">
+			<div class = "span7">
+				<div id="logo">
+					<a class="brand" href="/"><h1>Medical Ticket Service</h1></a>
+				</div>
+			</div>
+			<div class = "span5">
+				<div id="user_header">
 				<% if current_user %>
-				  Logged in as <%= current_user.email %>.
-				  ID:<%= current_user.id%>
-				  <%= link_to "Log Out", logout_path %>
+					Logged in as <%= current_user.email %>.
+					ID:<%= current_user.id%>
+					<%= link_to "Log Out", logout_path %>
 				<% else %>
-				<%= form_tag sessions_path do %>
-				  <div class="field">
-					<%= label_tag :email, "Email Address" %> 
-					<%= text_field_tag :email, params[:email] %>
-				  </div>
-				  <div class="field">
-					<%= label_tag :password %>
-					<%= password_field_tag :password %>
-				  </div>
-				  <div class="actions"><%= link_to "Sign Up", signup_path %> or <%= submit_tag "Log In" %></div>
+					<%= form_tag sessions_path do %>
+						<div class="field">
+							<%= label_tag :email, "Email Address" %> 
+							<%= text_field_tag :email, params[:email] %>
+						</div>
+						<div class="field">
+							<%= label_tag :password %>
+							<%= password_field_tag :password %>
+						</div>
+						<div class="actions">
+							<%= link_to "Sign Up", signup_path %> or <%= submit_tag "Log In" %>
+						</div>
+					<% end %>	  				  
 				<% end %>
-				  				  
-				<% end %>
-			  </div>
-
-			  <% flash.each do |name, msg| %>
+				</div>
+				<% flash.each do |name, msg| %>
 				<%= content_tag :div, msg, id: "flash_#{name}" %>
-			  <% end %>      
+				<% end %>
+			</div>
 		</div>
 	</div>
-
-	<div class="content_left">
-		<%= yield %>
+	
+	<div id="container-fluid">
+		<div class = "row-fluid">
+			<div class = "span10">
+				<%= yield %>
+			</div>
+			<div class = "span2">
+				<h4>My tickets</h4>
+				<div class = "content_right"></div>
+			</div>
+		</div>
 	</div>
-
-	<div class="content_right">
-			<h3>Ordered tickets</h3>
-
-				<table>
-				  <tr>
-					<th>Fio</th>
-					<th>Specialization_id</th>
-					<th>Duration</th>
-					<th></th>
-					<th></th>
-					<th></th>
-				  </tr>
-				
-			</table>
-	</div>
-	<div class="clear"></div>
+	
 
 	<div id="footer">
-	
-			<div class="navbar">
-				  <div class="navbar-inner">
-
-					<ul class="nav">
-					  <li class="active"><a href="/">Home</a></li>
-					  <li><a href="/doctors">Doctors</a></li>
-					  <li><a href="/tickets"</a>Tickets</li>
-					  <li><a href="/working_timetables">Working_timetables</a></li>
-					  <li><a href="/users">Users</a></li>
-					  <li><a href="/specializations">Specializations</a></li>
-					  <li><a href="/ticket_statuses">Ticket_statuses</a></li>	  
-					  <li><a href="/users_statuses">Users_statuses</a></li>
-					</ul>
-				  </div>
-				</div>
-			<div class="elki">
-				<center style='padding-top: 40px;'><img width="25%" height="89" src="/assets/elki_6de.gif" alt="new year 2013"><img width="25%" height="89" src="/assets/elki2_6de.gif" alt="new year 2013"><img width="25%" height="89" src="/assets/elki_6de.gif" alt="new year 2013"><img width="25%" height="89" src="/assets/elki2_6de.gif" alt="new year 2013">	</center>
+		<!--div class="navbar">
+			<div class="navbar-inner">
+				<ul class="nav">
+					<li class="active"><a href="/">Home</a></li>
+					<li><a href="/doctors">Doctors</a></li>
+					<li><a href="/tickets"</a>Tickets</li>
+					<li><a href="/working_timetables">Working_timetables</a></li>
+					<li><a href="/users">Users</a></li>
+					<li><a href="/specializations">Specializations</a></li>
+					<li><a href="/ticket_statuses">Ticket_statuses</a></li>	  
+					<li><a href="/users_statuses">Users_statuses</a></li>
+				</ul>
 			</div>
+		</div-->
+		<div class="elki">
+			<center style='padding-top: 40px;'><img width="25%" height="89" src="/assets/elki_6de.gif" alt="new year 2013"><img width="25%" height="89" src="/assets/elki2_6de.gif" alt="new year 2013"><img width="25%" height="89" src="/assets/elki_6de.gif" alt="new year 2013"><img width="25%" height="89" src="/assets/elki2_6de.gif" alt="new year 2013">	</center>
+		</div>
 	</div>
 </div>
 </body>

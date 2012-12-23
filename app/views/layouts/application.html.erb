@@ -46,7 +46,12 @@
 				</div>
 			</div>
 			<div class = "span5">
-				<div id="user_header">
+				<form class = "form">
+					<input type="text" class="input-medium" name = "email" placeholder="Email">
+					<input type="password" class="input-medium" name = "password" placeholder="Password">
+					<button id = "login_btn" class="btn">Log in</button>
+				</form>
+				<!--div id="user_header">
 				<% if current_user %>
 					Logged in as <%= current_user.email %>.
 					ID:<%= current_user.id%>
@@ -66,10 +71,10 @@
 						</div>
 					<% end %>	  				  
 				<% end %>
-				</div>
-				<% flash.each do |name, msg| %>
+				</div-->
+				<!--<% flash.each do |name, msg| %>
 				<%= content_tag :div, msg, id: "flash_#{name}" %>
-				<% end %>
+				<% end %>-->
 			</div>
 		</div>
 	</div>

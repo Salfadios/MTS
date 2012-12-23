@@ -1,7 +1,7 @@
 Mts::Application.routes.draw do
   get 'signup', to: 'users#new', as: 'signup'
   get 'login', to: 'sessions#new', as: 'login'
-  get 'logout', to: 'sessions#destroy', as: 'logout'
+  post 'logout', to: 'sessions#destroy', as: 'logout'
   
   match "specializations/showdoctors/:id" => "specializations#showdoctors"
   match "users/showticket/:id" => "users#showticket"

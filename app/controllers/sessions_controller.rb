@@ -9,7 +9,6 @@ class SessionsController < ApplicationController
 	  render json: user
     else
 	  answer = User.new
-	  answer.id = nil
 	  render json: answer
     end
   end
@@ -17,7 +16,6 @@ class SessionsController < ApplicationController
   def destroy
     session[:user_id] = nil
 	answer = User.new
-	answer.id = nil
 	render json: answer
   end
 end

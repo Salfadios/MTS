@@ -58,10 +58,8 @@ MTS.Views.Week = Backbone.View.extend({
 		var day = new MTS.Models.WorkDay();
 		if (day_time.get('doctor_id') == id_doc || id_doc == 'th') {
 			var w = JSON.parse(day_time.get('workingTimeHash'));
-			var number_day = day_name.split('-');
-			var d = new Date(number_day[2], number_day[1]-1, number_day[0]);
 			for (var j = 0; j < w.length; j++) {
-				if (j == d.getDay()) {
+				if (w[j].day == day_name) {
 					day.set('from', w[j].from);
 					day.set('to', w[j].to);
 				}

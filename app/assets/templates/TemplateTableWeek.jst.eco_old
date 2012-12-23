@@ -1,0 +1,12 @@
+<tr>
+    <td id="wd_th_1"></td>
+    <td id="wd_th_2">
+		<div id="wd__th__16-12-2012" class="work-days">Sunday</div>
+		<div id="wd__th__17-12-2012" class="work-days">Monday</div>
+		<div id="wd__th__18-12-2012" class="work-days">Tuesday</div>
+		<div id="wd__th__19-12-2012" class="work-days">Wednesday</div>
+		<div id="wd__th__20-12-2012" class="work-days">Thursday</div>
+		<div id="wd__th__21-12-2012" class="work-days">Friday</div>
+		<div id="wd__th__22-12-2012" class="work-days">Saturday</div>								
+	</td>
+</tr>

@@ -33,7 +33,8 @@ MTS.Views.DoctorView = Backbone.View.extend({
 		tt.url = "/working_timetables/" + doc.id;
 		tt.set({doc_fio: doc.get("fio"),
 			    doctor_id: doc.id,
-				duration: doc.get("duration")});
+				duration: doc.get("duration"),
+				specialization_id: doc.get("specialization_id")});
 		tt.fetch({success:function() {
 			MTS.Instances.SelectedDoctorsTT.add(tt);
 		}});

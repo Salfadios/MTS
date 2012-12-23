@@ -69,7 +69,8 @@ MTS.Views.Week = Backbone.View.extend({
 			day.set({duration: day_time.get('duration'),
 				     doc_fio: day_time.get('doc_fio'),
 					 doc_id: day_time.get('doctor_id'),
-					 data: day_name});
+					 data: day_name,
+					 specialization_id:  day_time.get("specialization_id")});
 			MTS.Instances.collectionDays.add(day);
 			arreyAttr['wd_day__' + day_time.get('doctor_id') + "__" +  day_name] = '#wd_day__' + day_time.get('doctor_id') + "__" +  day_name;
 			$('#wd_day__' + day_time.get('doctor_id') + "__" +  day_name).css("background-color","lime");

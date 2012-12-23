@@ -46,7 +46,11 @@ MTS.Views.SpecializationCollectionView = Backbone.View.extend({
 	removeThisSpecDoctor : function(spec_id)
 	{
 		var models = MTS.Instances.AllDoctors.docs.where({specialization_id:spec_id});
+		var modelsColDays = MTS.Instances.collectionDays.where({specialization_id:spec_id});
+		var modelsSelDoc = MTS.Instances.SelectedDoctorsTT.where({specialization_id:spec_id});
 		console.log(models);
 		MTS.Instances.AllDoctors.docs.remove(models);
+		MTS.Instances.collectionDays.remove(modelsColDays);
+		MTS.Instances.SelectedDoctorsTT.remove(modelsSelDoc);
 	}
 });

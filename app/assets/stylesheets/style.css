@@ -85,79 +85,68 @@ label {
 #timetable {
 	background-color: #E6E6FA;
 	width:100%;
+	margin-top: 10px;
 
 }
 #work-days
 {
 	background-color: #E6E6FA;
-	width:815px;
+	width: 80%;
 	margin-left:auto;
 	margin-right:auto;
 }
 
 #work-days, #timetable td  {
-	color: white;
-	background-color: #8F8781;
+	background-color: #BEBEBE;
 	font-weight:normal;
-
 }
 
 #work-days, #timetable div {
 	text-align: center;
-	
-	/*color: white;*/
 }
 
-
- .hour,  .half, .quarter, .work-days, .hour-day
- {
-	float:right; 
-    margin-left:0px; 
-	
-
- }
-
-.doc
-{
-	 width: 77px;
+.doc {
+	 width: 9%;
 }
+
 .work-days, .hour, .hour-day
  {    
      border: 1px solid black;
      float: left;
      font-size: 16px;
 	 width: 102px;
-    
 }
-.hour
-{
+
+.hour {
 	width: 10%;
 }  
-  .half
-  {    border: 1px solid black;
-      float: left;
-      font-size: 10px;
-      width: 5%;
-	   height: 20px;
-	 }
-  .quarter
-  {    border: 1px solid black;
-      float: left;
-      font-size: 10px;
-     width: 2.37%;
-	 height: 20px;
-	  }
-#timetable td div.color_ticket
-{
+
+.half  {    
+	border: 1px solid black;
+    float: left;
+    font-size: 10px;
+    width: 4.9%;
+	height: 20px;
+}
+  
+.quarter  { 
+   border: 1px solid black;
+    float: left;
+    font-size: 10px;
+    width: 2.37%;
+    height: 20px;
+}
+
+#timetable td div.color_ticket {
 	background-color:#3300CC;
 }
-table
-{
+
+table {
 	border : 1px;
 	border-spacing : 0px; 
 }
- td 
- {
+ 
+ td   {
     
     border: 1px ;
   }
@@ -170,4 +159,31 @@ table
 	-webkit-border-radius: 10px 10px;
 	-moz-border-radius: 10px / 10px;
 	border-radius: 10px / 10px;
+}
+
+#layout {
+    margin: 0 auto;
+    min-width: 800px;
+    padding: 0 30px 0 30px;
+    text-align: left;
+}
+
+#header {
+    padding-bottom: 24px;
+    padding-top: 10px;
+    position: relative;    
+	border-bottom: 1px solid #CCCCCC;
+	width: 100%;
+}
+
+#footer {
+    border-top: 1px solid #CCCCCC;
+    color: #949494;
+    font-family: Tahoma,Arial;
+    font-size: 11px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    overflow: hidden;
+    padding-top: 30px;
+	width: 100%;
 }

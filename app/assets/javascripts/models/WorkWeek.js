@@ -8,6 +8,7 @@ MTS.Models.WorkWeek = Backbone.Model.extend({
 		doctor_id: 1,
 		specialization_id: 1,
 		day: 'none',
+		day_name: 'none',
 		div: '',
 		time_line: '', 
 		duration: 0

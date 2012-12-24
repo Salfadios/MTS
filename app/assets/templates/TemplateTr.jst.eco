@@ -1,5 +1,7 @@
 <tr id="tr_doc__<%=@doc_id + "__" + @data%>" class="tr_spec__<%=@specialization_id %>">
 	<td class = "doc" id="td_1_doc__<%=@doc_id + "__" + @data%>"><%=@doc_fio + " " + @data%></td>
-	<td  id="td_2_doc__<%=@doc_id + "__" + @data%>" class = "time"></td>
-	
+	<td  class = "time">
+		<ul class="nav" id="td_2_doc__<%=@doc_id + "__" + @data%>">
+		</ul>
+	</td>
 </tr>

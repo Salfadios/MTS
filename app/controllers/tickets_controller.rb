@@ -63,7 +63,16 @@ class TicketsController < ApplicationController
 		end
 	end
   end
+  
+  def showticketanddoctors    
+    @tickets = Ticket.all
+	@doctors = Doctor.all
 
+    respond_to do |format|
+      format.json { render json:  @tickets.doctor }
+    end
+  end
+  
   # PUT /tickets/1
   # PUT /tickets/1.json
   def update

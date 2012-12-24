@@ -6,6 +6,7 @@ Mts::Application.routes.draw do
   match "specializations/showdoctors/:id" => "specializations#showdoctors"
   match "users/showticket/:id" => "users#showticket"
   match "doctors/showticket/:id" => "doctors#showticket"
+  match "tickets/showticketanddoctors" => "tickets#showticketanddoctors"
   
   
   resources :users

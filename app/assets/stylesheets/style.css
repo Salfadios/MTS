@@ -1,6 +1,5 @@
 ﻿body {
 	background-color: white;
-		
 }
 
 .app {
@@ -89,7 +88,7 @@ label {
 
 #timetable {
 	background-color: white;
-	width:100%;
+	width: 90%;
 	margin-top: 10px;
 }
 
@@ -106,25 +105,27 @@ label {
 }
 
 .doc {
-	 width: 9%;
+	 width: 10%;
 }
 
-.work-days, .hour, .hour-day {    
+.work-days, .hour-day {    
      border-right: 1px solid #3399FF;
      float: left;
      font-size: 16px;
-	 width: 102px;
+	 width: 14.153%;
 }
 
 .hour {
-	width: 10%;
+    border-right: 1px solid #3399FF;
+	float: left;
+	width: 10.95%;
 }  
 
 .half  {    
 	border-right: 1px solid #3399FF;
     float: left;
     font-size: 10px;
-    width: 4.9%;
+    width: 5.427%;
 	height: 20px;
 }
   
@@ -132,7 +133,7 @@ label {
    border-right: 1px solid #3399FF;
     float: left;
     font-size: 10px;
-    width: 2.37%;
+    width: 2.65%;
     height: 20px;
 }
 

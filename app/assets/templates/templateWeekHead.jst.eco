@@ -1,1 +1,1 @@
-<li><a id="wd__th__<%=@day%>" class="work-days"><%=@day_name%></a></li>
+<li ><a id="wd__th__<%=@day%>" class="work-days"><%=@day_name%></a></li>

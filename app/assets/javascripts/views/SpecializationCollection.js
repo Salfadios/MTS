@@ -7,10 +7,9 @@ MTS.Views.SpecializationCollectionView = Backbone.View.extend({
 		console.log("Doctors collection initialized!");
 	},
 	events: {
-		"click .spec_list_item":"clickSpec"
+		"click .spec_list_item": "clickSpec"
 	},
-	render:function()
-	{
+	render: function() {
 		this.showAll();
 	},
 	showOne: function(spec){
@@ -24,13 +23,10 @@ MTS.Views.SpecializationCollectionView = Backbone.View.extend({
 	clickSpec: function(e) {
 		var id = parseInt(e.target.id.split("__")[1]);
 		
-		if (!$(e.target).attr("style"))
-		{
+		if (!$(e.target).attr("style")) {
 			this.addThisSpecDoctor(id);
 			$(e.target).css("background-color","lime");
-		}
-		else
-		{
+		} else {
 			this.removeThisSpecDoctor(id);
 			$(e.target).removeAttr("style");
 		}
@@ -43,8 +39,7 @@ MTS.Views.SpecializationCollectionView = Backbone.View.extend({
 			console.log(spec);
 		}});
 	},
-	removeThisSpecDoctor : function(spec_id)
-	{
+	removeThisSpecDoctor : function(spec_id) {
 		var models = MTS.Instances.AllDoctors.docs.where({specialization_id:spec_id});
 		var modelsColDays = MTS.Instances.collectionDays.where({specialization_id:spec_id});
 		var modelsSelDoc = MTS.Instances.SelectedDoctorsTT.where({specialization_id:spec_id});

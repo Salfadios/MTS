@@ -22,18 +22,16 @@
 			
 			<div class = "span5">
 				<div class = "auth_win">
-				<!--% if !current_user %-->
 					<form class = "form">
 						<input type="text" class="input-medium" name = "email" placeholder="Email">
 						<input type="password" class="input-medium" name = "password" placeholder="Password">
 						<button type = "button" id = "login_btn" class="btn">Log in</button>
 					</form>
-				<!--% else %-->
 					<div class = "greet_win">
 						<div class = "greeting"></div>
 						<a href = "#" id = "logout_link">Log out</a>
 					</div>
-				<!--% end %-->
+
 				</div>
 				<!--div id="user_header">
 				<% if current_user %>

@@ -4,12 +4,19 @@ MTS.Views.TicketCollectionView = Backbone.View.extend({
 	board: new MTS.Collections.TicketCollection(),
 	events:
 	{
-		"click .quarter, .half":"addOne",
+		"click .quarter, .half":"addOne"
 	},
 	initialize: function()
 	{
 		this.board.on("all", this.render, this);
-		this.board.fetch();
+		this.board.fetch({
+			success:_.bind(function ()
+			{
+				console.log("Tickets fetched!");
+				this.render();
+				console.log("Rendering finished!");
+			}, this)
+		});
 		console.log("Ticket collection initialized!");
 	},
 	addOne: function(e)
@@ -52,6 +59,7 @@ MTS.Views.TicketCollectionView = Backbone.View.extend({
 	},
 	render:function()
 	{
+		console.log("Rendering started!");
 		$(".quarter, .half, .content_right").empty();
 		this.showAllOwn();
 		this.showAll();
@@ -73,6 +81,7 @@ MTS.Views.TicketCollectionView = Backbone.View.extend({
 	{
 		var view = new MTS.Views.TicketView({model:ticket});
 		view.render();
+		console.log("Own ticket!");
 	},
 	showAllOwn: function () {
 		var id = MTS.Instances.User.model.get("id");

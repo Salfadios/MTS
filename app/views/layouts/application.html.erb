@@ -11,14 +11,15 @@
 <div id="layout">
 	<div id="header" class = "container-fluid">
 		<div class = "row-fluid">
-		    
-			<div class = "span7">
+		    <div class = "span7">
 				<div id = "head">
+					<img width="25%" height="89" src="/assets/head.jpg" >
 				</div>
-				<div id="logo">
+				<div id="logo" class = "offset1">
 					<a class="brand" href="/"><h1>Medical Ticket Service</h1></a>
 				</div>
 			</div>
+			
 			<div class = "span5">
 				<div class = "auth_win">
 				<!--% if !current_user %-->
@@ -26,7 +27,6 @@
 						<input type="text" class="input-medium" name = "email" placeholder="Email">
 						<input type="password" class="input-medium" name = "password" placeholder="Password">
 						<button type = "button" id = "login_btn" class="btn">Log in</button>
-						
 					</form>
 				<!--% else %-->
 					<div class = "greet_win">

@@ -1,3 +1,1 @@
-<div class = "doctor_list_item">
-	<%=@fio + " (" + @specialization_id + ")"%>
-</div>
+<a class = "doctor_list_item"><%=@fio + " (" + @specialization_id + ")"%></a>

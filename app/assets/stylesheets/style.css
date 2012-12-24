@@ -1,5 +1,5 @@
 ﻿body {
-	background-color:	#e5e5e5;
+	background-color: white;
 		
 }
 
@@ -19,17 +19,9 @@
 	height:94px;
 }
 
-#head {
-	background-image: url('./img/head.jpg');
-	height: 115px;
-	width: 237px;
-	position: relative;
-}
-
-#logo {
-	position: absolute;
-	top: 90px;
-	left: 100px;
+#header {
+	background-image: url('./img/back-gronud-head.jpg');
+	height: 160px;
 }
 
 .ticket {
@@ -96,13 +88,13 @@ label {
 
 
 #timetable {
-	background-color: #E6E6FA;
+	background-color: white;
 	width:100%;
 	margin-top: 10px;
 }
 
 #work-days {
-	background-color: #E6E6FA;
+	background-color: white;
 	width: 80%;
 	margin-left:auto;
 	margin-right:auto;
@@ -110,7 +102,7 @@ label {
 }
 
 #work-days, #timetable td  {
-	background-color: #BEBEBE;
+	background-color: white;
 	font-weight:normal;
 }
 
@@ -151,16 +143,16 @@ label {
 }
 
 #timetable td div.color_ticket {
-	background-color:#3300CC;
+	background-color: blue;
 }
 
 table {
-	border : 1px;
+	border : 1px solid black;
 	border-spacing : 0px; 
 }
  
  td   {
-    border: 1px ;
+    border: 1px solid black;
 }
 
 .ticket_small {
@@ -178,14 +170,6 @@ table {
     min-width: 800px;
     padding: 0 30px 0 30px;
     text-align: left;
-}
-
-#header {
-    padding-bottom: 24px;
-    padding-top: 10px;
-    position: relative;    
-	border-bottom: 1px solid #CCCCCC;
-	width: 100%;
 }
 
 #footer {

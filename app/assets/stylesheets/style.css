@@ -1,5 +1,5 @@
 ﻿body {
-	background-color:#e5e5e5;
+	background-color:	#e5e5e5;
 		
 }
 
@@ -19,6 +19,19 @@
 	height:94px;
 }
 
+#head {
+	background-image: url('./img/head.jpg');
+	height: 115px;
+	width: 237px;
+	position: relative;
+}
+
+#logo {
+	position: absolute;
+	top: 90px;
+	left: 100px;
+}
+
 .ticket {
 	margin-top:10px;
 	color:#0000aa;
@@ -27,7 +40,7 @@
 	height:20%;
 	border:1px solid gray;
 	padding:5px;
-	background-image:url('./img/cell.jpg');
+	background-image: url('./img/cell.jpg');
 }
 
 .ticket_in_tt {

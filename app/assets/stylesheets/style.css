@@ -101,11 +101,6 @@ label {
 	margin-top: 10px;
 }
 
-#work-days, #timetable td  {
-	background-color: white;
-	font-weight:normal;
-}
-
 #work-days, #timetable div {
 	text-align: center;
 }
@@ -114,9 +109,8 @@ label {
 	 width: 9%;
 }
 
-.work-days, .hour, .hour-day
- {    
-     border: 1px solid black;
+.work-days, .hour, .hour-day {    
+     border-right: 1px solid #3399FF;
      float: left;
      font-size: 16px;
 	 width: 102px;
@@ -127,7 +121,7 @@ label {
 }  
 
 .half  {    
-	border: 1px solid black;
+	border-right: 1px solid #3399FF;
     float: left;
     font-size: 10px;
     width: 4.9%;
@@ -135,7 +129,7 @@ label {
 }
   
 .quarter  { 
-   border: 1px solid black;
+   border-right: 1px solid #3399FF;
     float: left;
     font-size: 10px;
     width: 2.37%;
@@ -144,15 +138,6 @@ label {
 
 #timetable td div.color_ticket {
 	background-color: blue;
-}
-
-table {
-	border : 1px solid black;
-	border-spacing : 0px; 
-}
- 
- td   {
-    border: 1px solid black;
 }
 
 .ticket_small {

@@ -9,13 +9,13 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 		MTS.Instances.SelectedDoctorsTT.on("add", this.show, this);
 		MTS.Instances.SelectedDoctorsTT.on("remove", this.show, this);
 		count = 0;
-		arreyAttr = [];
+		arreyAttr = [];		
 	},
 	
 	showTable: function(day_time) {
 		var div = '';
-	    var arreyDay = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-		var data = new Date();
+		var arreyDay = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+	   	var data = new Date();
 		var day = data.getDate();
 		var month = data.getMonth() + 1;
 		var year = data.getFullYear();

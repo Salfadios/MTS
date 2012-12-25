@@ -52,14 +52,20 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 	
 	show: function() {	    
 		$(this.el).empty();
-		this.showTable(MTS.Instances.SelectedDoctorsTT.models[0]);
-		for (var i = 0; i < MTS.Instances.SelectedDoctorsTT.models.length; i++) {
-			this.render(MTS.Instances.SelectedDoctorsTT.models[i]);
-		}
+		$("#lable-table").css("visibility", "visible");
+		$(this.el).css("visibility", "visible");
 		if (MTS.Instances.SelectedDoctorsTT.models.length <= 0) {
-			 this.$el.empty();
+			this.$el.empty();
 			 for (var key in arreyAttr)
 				delete arreyAttr[key];
+			$("#work-days").css("visibility", "hidden");
+			$("#lable-table").css("visibility", "hidden");
+			$("#time-table").css("visibility", "hidden");
+		} else {
+			this.showTable(MTS.Instances.SelectedDoctorsTT.models[0]);
+			for (var i = 0; i < MTS.Instances.SelectedDoctorsTT.models.length; i++) {
+				this.render(MTS.Instances.SelectedDoctorsTT.models[i]);
+			}
 		}
 		for (var key in arreyAttr)
 			$(arreyAttr[key]).css("background-color","lime");

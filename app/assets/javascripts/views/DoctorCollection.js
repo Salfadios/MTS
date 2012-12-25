@@ -19,7 +19,14 @@ MTS.Views.DoctorCollectionView = Backbone.View.extend({
 	},
 	showAll: function(){
 		$("#doctors_list").empty();
-		_.each(this.docs.models, this.showOne, this);
-		console.log("Doctors have been renedered!");
+		$("#lable-doctor").css("visibility", "visible");
+		$(this.el).css("visibility", "visible");
+		if (this.docs.models.length <= 0) {
+			$("#lable-doctor").css("visibility", "hidden");
+			$(this.el).css("visibility", "hidden");
+		} else {
+			_.each(this.docs.models, this.showOne, this);
+			console.log("Doctors have been renedered!");
+		}
 	}
 });

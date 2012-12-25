@@ -14,7 +14,7 @@ MTS.Views.Week = Backbone.View.extend({
 		var day_name = doc_day[2];
 		for (var i = 0; i < MTS.Instances.SelectedDoctorsTT.models.length; i++) {
 			var model = MTS.Instances.SelectedDoctorsTT.models[i];
-		this.setModel(model, id_doc, day_name);
+			this.setModel(model, id_doc, day_name);
 		}		
 	},
 	
@@ -39,8 +39,7 @@ MTS.Views.Week = Backbone.View.extend({
 			delete arreyAttr[el.id];
 			$('#' + el.id).removeAttr("style");
 			return true; 
-		} 
-		else
+		} else
 			$('#' + el.id).css("background-color","lime");
 		return doc_d ;
 	},

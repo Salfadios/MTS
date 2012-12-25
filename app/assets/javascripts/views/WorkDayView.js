@@ -29,7 +29,7 @@ MTS.Views.WorkDay = Backbone.View.extend({
 	},
 	
 	render: function(day) {
-		var div = '', flag = 0;
+		var div = '', flag = 0, time_ticket = 0;
 		dur = '';
 		day.set('ticket_time', '8:00');
 		var time = day.get('ticket_time').split(':'), from = day.get('from').split(':'), to = day.get('to').split(':'); 		
@@ -38,8 +38,6 @@ MTS.Views.WorkDay = Backbone.View.extend({
 			var count = this.getCount(day);
 			for (var i = 0; i < count; i++) {
 				flag = this.setTime(time, from, to, day);
-				if (parseInt(time[0])/10 < 1)
-					time[0] = '0' + parseInt(time[0]);
 				day.set('ticket_t', time[0] + '' + time[1]);
 				div += this.template_span(day.toJSON());
 				if (flag == 1) {

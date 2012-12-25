@@ -11,10 +11,6 @@ MTS.Views.DoctorCollectionView = Backbone.View.extend({
 	},
 	showOne: function(doctor){
 		var view = new MTS.Views.DoctorView({model:doctor});
-		for (var key in arreyAttr) {
-			if (key != 'wd_day__' + doctor.id + "__" + view.model.get('data'))
-				delete arreyAttr[key];
-		}
 		view.render();
 	},
 	showAll: function(){

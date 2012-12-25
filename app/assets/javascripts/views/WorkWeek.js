@@ -66,8 +66,8 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 			for (var i = 0; i < MTS.Instances.SelectedDoctorsTT.models.length; i++) {
 				this.render(MTS.Instances.SelectedDoctorsTT.models[i]);
 			}
+			for (var key in arreyAttr)
+				$(arreyAttr[key]).css("background-color","lime");
 		}
-		for (var key in arreyAttr)
-			$(arreyAttr[key]).css("background-color","lime");
 	}	
 });

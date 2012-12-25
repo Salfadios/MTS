@@ -39,10 +39,23 @@ MTS.Views.SpecializationCollectionView = Backbone.View.extend({
 			console.log(spec);
 		}});
 	},
+	
+	removeArray: function(modelsSelDoc) {
+		var id = '';
+		for (var i = 0; i < modelsSelDoc.length; i++) {
+			for (var key in arreyAttr) {
+				id = key.split('__');
+				if (id[1] == modelsSelDoc[i].get('doctor_id'))
+					delete arreyAttr[key];
+			}
+		}
+	},
+	
 	removeThisSpecDoctor : function(spec_id) {
 		var models = MTS.Instances.AllDoctors.docs.where({specialization_id:spec_id});
 		var modelsColDays = MTS.Instances.collectionDays.where({specialization_id:spec_id});
 		var modelsSelDoc = MTS.Instances.SelectedDoctorsTT.where({specialization_id:spec_id});
+		this.removeArray(modelsSelDoc);
 		console.log(models);
 		MTS.Instances.AllDoctors.docs.remove(models);
 		MTS.Instances.collectionDays.remove(modelsColDays);

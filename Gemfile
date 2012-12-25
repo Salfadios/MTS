@@ -40,3 +40,12 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # To use debugger
 # gem 'debugger'
 gem 'backbone-on-rails'
+group :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers'  
+  gem 'database_cleaner'
+  # gem 'rack-test'
+  # gem 'cucumber-rails'
+  # gem 'simplecov'
+end

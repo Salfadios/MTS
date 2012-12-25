@@ -70,7 +70,7 @@ MTS.Views.TicketCollectionView = Backbone.View.extend({
 		console.log("Own ticket!");
 	},
 	showAllOwn: function () {
-		var id = MTS.Instances.User.model.get("id");
+		var id = parseInt(MTS.Instances.User.model.get("id"));
 		_.each(this.board.where({user_id:id}), this.showOneOwn);
 	}
 });

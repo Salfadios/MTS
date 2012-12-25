@@ -114,6 +114,15 @@
 	border-radius: 10px / 10px;
 }
 
+.my_ticket {
+	background-color:#00ff00;
+}
+
+.cont {
+	width:100%;
+	height:100%;
+}
+
 #layout {
     margin: 0 auto;
     min-width: 800px;

@@ -9,9 +9,7 @@ MTS.Views.TicketCollectionView = Backbone.View.extend({
 		this.board.on("all", this.render, this);
 		this.board.fetch({
 			success:_.bind(function () {
-				console.log("Tickets fetched!");
 				this.render();
-				console.log("Rendering finished!");
 			}, this)
 		});
 		console.log("Ticket collection initialized!");
@@ -22,7 +20,8 @@ MTS.Views.TicketCollectionView = Backbone.View.extend({
 				user_id: MTS.Instances.User.model.get("id"),
 				doctor_id: parseInt(ticket_data[1]),
 				date: ticket_data[2]
-			});	
+			});
+			console.log(another_ticket);			
 		if (ticket_data[0] !== "" &&
 			$(e.target).hasClass("color_ticket")) {
 			if (another_ticket.length === 0) {
@@ -48,7 +47,6 @@ MTS.Views.TicketCollectionView = Backbone.View.extend({
 		return hours + ":" + minutes;
 	},
 	render:function() {
-		console.log("Rendering started!");
 		$(".quarter, .half, .content_right").empty();
 		this.showAllOwn();
 		this.showAll();
@@ -65,9 +63,18 @@ MTS.Views.TicketCollectionView = Backbone.View.extend({
 		this.board.each(this.showOne);
 	},
 	showOneOwn: function (ticket) {
-		var view = new MTS.Views.TicketView({model:ticket});
+		var view = new MTS.Views.TicketView({model:ticket}),
+		doc = new MTS.Models.Doctor;
+		doc.url = "/doctors/" + ticket.get("doctor_id") + ".json";
 		view.render();
-		console.log("Own ticket!");
+		doc.fetch({
+			success: function (data)
+			{
+				view.$el.find(".ticket-line")
+					.first().append("<b>" +
+						data.get("fio") + "</b>");
+			}
+		});
 	},
 	showAllOwn: function () {
 		var id = parseInt(MTS.Instances.User.model.get("id"));

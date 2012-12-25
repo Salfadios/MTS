@@ -1,10 +1,7 @@
 MTS.Models.User = Backbone.Model.extend({
 	defaults:
 	{
-		id: 0,
-		name: "Default user",
-		authenticity_token:"ii4yG9oyELn1wx8son/gVLMkLi5v4ZeU0rZ+o8gBsnM=",
-		status: "Unlogged"
+		id: 0
 	},
 	request: {},
 	login: function(auth_data)
@@ -36,7 +33,6 @@ MTS.Models.User = Backbone.Model.extend({
 	
 	logout: function()
 	{
-		this.request = null;
 		this.request = $.ajax({
 			url: "/logout",
 			type: 'POST',

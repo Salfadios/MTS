@@ -1,6 +1,7 @@
 MTS.Views.TicketViewSmall = Backbone.View.extend({
 	tagName: "div",
-	template: JST["TicketSmall"],
+	className: "cont",
+	template: JST ["TicketSmall"],
 	events: {
 		"dblclick .ticket_small":"deleteTicket"
 	},
@@ -20,8 +21,11 @@ MTS.Views.TicketViewSmall = Backbone.View.extend({
 		}
 	},
 	render: function(container){
+		var user = parseInt(window.sessionStorage.getItem("id"));
 		this.$el.html(this.template(this.model.toJSON()));
 		$(container).empty();
+		if (this.model.get("user_id") === user)
+			this.$el.toggleClass("my_ticket");
 		$(container).append(this.el);
 		return this;
 	}

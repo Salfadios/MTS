@@ -1,6 +1,5 @@
 <div class = "ticket">
 	<b class = "ticket-title">Ticket</b>
-	<p class = "ticket-line"><label>Doctor:</label><%= @doctor %></p>
-	<p class = "ticket-line"><label>Room:</label>241</p>
+	<p class = "ticket-line"><label>Doctor:</label></p>
 	<p class = "ticket-line"><label>Date/time:</label><%= @date + "/" + @time%></p>
 </div>

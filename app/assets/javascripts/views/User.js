@@ -78,7 +78,7 @@ MTS.Views.UserView = Backbone.View.extend({
 		{
 		
 			this.model.set({
-				id:window.sessionStorage.getItem("id"), 
+				id:parseInt(window.sessionStorage.getItem("id")), 
 				fio: window.sessionStorage.getItem("fio"),
 				email: window.sessionStorage.getItem("email")
 			});

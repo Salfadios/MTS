@@ -1,0 +1,3 @@
+<h4>Work time</h4>
+<table id = "work-days" class="table table-bordered table-striped table-hover"></table>
+<table id = "timetable" class="table table-bordered table-striped table-hover"></table>

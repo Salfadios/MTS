@@ -2951,7 +2951,7 @@ table th[class*="span"],
 
 .dropdown-menu .disabled > a,
 .dropdown-menu .disabled > a:hover {
-  color: #999999;
+  color: #00FF00;
 }
 
 .dropdown-menu .disabled > a:hover {
@@ -2965,6 +2965,7 @@ table th[class*="span"],
 .open {
   *z-index: 1000;
 }
+
 
 .open > .dropdown-menu {
   display: block;

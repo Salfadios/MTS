@@ -4,7 +4,7 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 	template_table: JST["TemplateTableWeek"],
 	template_head: JST["templateWeekHead"],
 	el: '#work-days',
-		
+			
 	initialize: function() {
 		MTS.Instances.SelectedDoctorsTT.on("add", this.show, this);
 		MTS.Instances.SelectedDoctorsTT.on("remove", this.show, this);
@@ -50,8 +50,8 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 		$("#wd_td_2__" + day_time.get("doctor_id")).append(div);
 	},
 	
-	show: function() {
-	    this.$el.empty();
+	show: function() {	    
+		$(this.el).empty();
 		this.showTable(MTS.Instances.SelectedDoctorsTT.models[0]);
 		for (var i = 0; i < MTS.Instances.SelectedDoctorsTT.models.length; i++) {
 			this.render(MTS.Instances.SelectedDoctorsTT.models[i]);

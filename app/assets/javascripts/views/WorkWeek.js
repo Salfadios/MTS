@@ -8,23 +8,26 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 	initialize: function() {
 		MTS.Instances.SelectedDoctorsTT.on("add", this.show, this);
 		MTS.Instances.SelectedDoctorsTT.on("remove", this.show, this);
-		count = 0;
-		arreyAttr = [];		
+		arreyAttr = [];
+		this.data = 0, this.day = 0, this.month = 0, this.year = 0, this.day_week = 0;
+	},
+	
+	getData: function() {
+		this.data = new Date();
+		this.day = this.data.getDate();
+		this.month = this.data.getMonth() + 1;
+		this.year = this.data.getFullYear();
+		this.day_week = this.data.getDay();
 	},
 	
 	showTable: function(day_time) {
-		var div = '';
-		var arreyDay = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-	   	var data = new Date();
-		var day = data.getDate();
-		var month = data.getMonth() + 1;
-		var year = data.getFullYear();
-		var day_week = data.getDay();
-		day = day - day_week;
+		var div = '', arreyDay = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+		this.getData();
+	   	this.day = this.day - this.day_week;
 		for (var j = 0; j < arreyDay.length; j++) {
 			day_time.set('day_name', arreyDay[j]);
-			day_time.set('day', day + "-" + month + "-" + year);
-			day = day + 1;
+			day_time.set('day', this.day + "-" + this.month + "-" + this.year);
+			this.day = this.day + 1;
 			div += this.template_head(day_time.toJSON());
 		}
 		$(this.el).append(this.template_table);
@@ -33,17 +36,13 @@ MTS.Views.WorkWeek = Backbone.View.extend({
 	
 	render: function(day_time) {
 		var div = '';
-		var data = new Date();
-		var day = data.getDate();
-		var month = data.getMonth() + 1;
-		var year = data.getFullYear();
-		var day_week = data.getDay();
+		this.getData();
 		week = JSON.parse(day_time.get('workingTimeHash'));
-		day = day - day_week;
+		this.day = this.day - this.day_week;
 		for (var j = 0; j < week.length; j++) {
 			day_time.set('time_line', week[j].from + '-' + week[j].to);
-			day_time.set('day', day + "-" + month + "-" + year);
-			day = day + 1;
+			day_time.set('day', this.day + "-" + this.month + "-" + this.year);
+			this.day = this.day + 1;
 			div += this.template_day(day_time.toJSON());
 		}
 		$(this.el).append(this.template_week(day_time.toJSON()));

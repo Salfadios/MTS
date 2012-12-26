@@ -3,6 +3,10 @@ MTS.Views.WorkDay = Backbone.View.extend({
 	template_span: JST["TimetableTicket"],
 	el_tr: '#timetable',
 	
+	intialize: function() {
+		this.duration_class = 0;
+	},
+	
 	getCount: function(day) {
 		var count  = 60/day.get('duration');
 			if (count == 1)
@@ -19,7 +23,7 @@ MTS.Views.WorkDay = Backbone.View.extend({
 			time[1] = "00";
 		if (parseInt(time[0]) >= parseInt(from[0]) && parseInt(time[0]) < parseInt(to[0])) {
 			day.set('ticket_time', time[0] + ':' + time[1]);
-			dur = day.get('duration_class');
+			this.duration_class = day.get('duration_class');
 			day.set('duration_class', day.get('duration_class') + ' color_ticket');
 			return 1;
 		} else {
@@ -30,7 +34,7 @@ MTS.Views.WorkDay = Backbone.View.extend({
 	
 	render: function(day) {
 		var div = '', flag = 0, time_ticket = 0;
-		dur = '';
+		this.duration_class = '';
 		day.set('ticket_time', '8:00');
 		var time = day.get('ticket_time').split(':'), from = day.get('from').split(':'), to = day.get('to').split(':'); 		
 		for (var j = 0; j <= 8; j++) {
@@ -41,7 +45,7 @@ MTS.Views.WorkDay = Backbone.View.extend({
 				day.set('ticket_t', time[0] + '' + time[1]);
 				div += this.template_span(day.toJSON());
 				if (flag == 1) {
-					day.set('duration_class', dur);
+					day.set('duration_class', this.duration_class);
 					flag = 0;
 				}
 				duration = parseInt(day.get('duration'));

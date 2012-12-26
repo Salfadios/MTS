@@ -13,7 +13,7 @@
 		<div class = "row-fluid">
 		    <div class = "span7">
 				<div id = "head">
-					<img width="25%" height="89" src="/assets/head.jpg" >
+					<img width="25%" height="89" src="/assets/head.gif" >
 				</div>
 				<div id="logo" class = "offset1">
 					<a class="brand" href="/"><h1>Medical Ticket Service</h1></a>
@@ -31,32 +31,7 @@
 						<div class = "greeting"></div>
 						<a href = "#" id = "logout_link">Log out</a>
 					</div>
-
 				</div>
-				<!--div id="user_header">
-				<% if current_user %>
-					Logged in as <%= current_user.email %>.
-					ID:<%= current_user.id%>
-					<%= link_to "Log Out", logout_path %>
-				<% else %>
-					<%= form_tag sessions_path do %>
-						<div class="field">
-							<%= label_tag :email, "Email Address" %> 
-							<%= text_field_tag :email, params[:email] %>
-						</div>
-						<div class="field">
-							<%= label_tag :password %>
-							<%= password_field_tag :password %>
-						</div>
-						<div class="actions">
-							<%= link_to "Sign Up", signup_path %> or <%= submit_tag "Log In" %>
-						</div>
-					<% end %>	  				  
-				<% end %>
-				</div-->
-				<!--<% flash.each do |name, msg| %>
-				<%= content_tag :div, msg, id: "flash_#{name}" %>
-				<% end %>-->
 			</div>
 		</div>
 	</div>
@@ -71,24 +46,9 @@
 				<div class = "content_right"></div>
 			</div>
 		</div>
-	</div>
-	
+	</div>	
 
 	<div id="footer">
-		<!--div class="navbar">
-			<div class="navbar-inner">
-				<ul class="nav">
-					<li class="active"><a href="/">Home</a></li>
-					<li><a href="/doctors">Doctors</a></li>
-					<li><a href="/tickets"</a>Tickets</li>
-					<li><a href="/working_timetables">Working_timetables</a></li>
-					<li><a href="/users">Users</a></li>
-					<li><a href="/specializations">Specializations</a></li>
-					<li><a href="/ticket_statuses">Ticket_statuses</a></li>	  
-					<li><a href="/users_statuses">Users_statuses</a></li>
-				</ul>
-			</div>
-		</div-->
 		<div class="elki">
 			<center style='padding-top: 40px;'><img width="25%" height="89" src="/assets/elki_6de.gif" alt="new year 2013"><img width="25%" height="89" src="/assets/elki2_6de.gif" alt="new year 2013"><img width="25%" height="89" src="/assets/elki_6de.gif" alt="new year 2013"><img width="25%" height="89" src="/assets/elki2_6de.gif" alt="new year 2013">	</center>
 		</div>

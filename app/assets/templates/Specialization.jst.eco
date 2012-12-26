@@ -1,1 +1,1 @@
-<a class = "spec_list_item" id = "spec__<%=@id%>" tabindex="-1" href="#"><%=@name%></a>
+<a class = "spec_list_item" id = "spec__<%=@id%>" tabindex="-1"><%=@name%></a>

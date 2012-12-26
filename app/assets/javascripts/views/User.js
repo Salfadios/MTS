@@ -29,6 +29,8 @@ MTS.Views.UserView = Backbone.View.extend({
 		this.hideForm();
 		this.showGreeting();
 		this.saveSession(data);
+		if (MTS.Instances.AllTickets)
+			MTS.Instances.AllTickets.render();
 	},
 	logoutCallback: function (event, data)
 	{

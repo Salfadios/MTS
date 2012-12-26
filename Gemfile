@@ -45,6 +45,7 @@ group :test do
   gem 'factory_girl_rails'
   gem 'shoulda-matchers'  
   gem 'database_cleaner'
+  gem 'jasmine', :group => [:development, :test]
   # gem 'rack-test'
   # gem 'cucumber-rails'
   # gem 'simplecov'

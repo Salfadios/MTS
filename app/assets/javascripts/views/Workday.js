@@ -15,13 +15,13 @@ MTS.Views.WorkDayView = Backbone.View.extend({
 	    $(this.view_day.el_tr).css("visibility", "visible");
 		$(this.view_day.el_tr).empty();
 		this.showTable();
-		for (var p = 0; p < MTS.Instances.collectionDays.models.length; p++) {
-			this.view_day.render(MTS.Instances.collectionDays.models[p]);
-		}
-		
 		if (MTS.Instances.collectionDays.models.length <= 0) {
 			$(this.view_day.el_tr).empty();
 			$(this.view_day.el_tr).css("visibility", "hidden");
-		}
+		} else {
+			for (var p = 0; p < MTS.Instances.collectionDays.models.length; p++) {
+				this.view_day.render(MTS.Instances.collectionDays.models[p]);
+			}
+		}		
 	}
 });

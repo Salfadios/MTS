@@ -29,7 +29,7 @@ MTS.Views.Week = Backbone.View.extend({
 					model = modelD[i];
 			        delete arreyAttr['wd_day__' + model.get('doc_id') + "__" + doc_d[2]];
 				    $('#wd_day__' + model.get('doc_id') + "__" + doc_d[2]).removeAttr("style");
-			        }
+			    }
 			} else {
 				modelD = MTS.Instances.collectionDays.where({doc_id:parseInt(doc_d[1]),
 														 data:doc_d[2]});
@@ -43,17 +43,8 @@ MTS.Views.Week = Backbone.View.extend({
 		return doc_d ;
 	},
 	
-	setModel: function(day_time, id_doc, day_name) {
-		var flag_set = false, model, number_day, week_hesh, day_ticket, day;
-		for (var i = 0; i < MTS.Instances.collectionDays.models.length; i++) {
-			model = MTS.Instances.collectionDays.models[i];
-			if (model.get('data') == day_name && day_time.get('doctor_id') == model.get('doc_id')) 
-				return;
-			else
-				flag_set = false;
-		}
-		if (flag_set == false) {
-		day = new MTS.Models.WorkDay();
+	setDay: function(day_time, id_doc, day_name) {
+		var number_day, week_hesh, day_ticket, day = new MTS.Models.WorkDay();
 		if (day_time.get('doctor_id') == id_doc || id_doc == 'th') {
 			week_hesh = JSON.parse(day_time.get('workingTimeHash'));
 			number_day = day_name.split('-');
@@ -72,7 +63,20 @@ MTS.Views.Week = Backbone.View.extend({
 			MTS.Instances.collectionDays.add(day);
 			arreyAttr['wd_day__' + day_time.get('doctor_id') + "__" +  day_name] = '#wd_day__' + day_time.get('doctor_id') + "__" +  day_name;
 			$('#wd_day__' + day_time.get('doctor_id') + "__" +  day_name).css("background-color","lime");
-			}
+	    }
+	},
+	
+	setModel: function(day_time, id_doc, day_name) {
+		var flag_set = false, model;
+		for (var i = 0; i < MTS.Instances.collectionDays.models.length; i++) {
+			model = MTS.Instances.collectionDays.models[i];
+			if (model.get('data') == day_name && day_time.get('doctor_id') == model.get('doc_id')) 
+				return;
+			else
+				flag_set = false;
+		}
+		if (flag_set == false) {
+			this.setDay(day_time, id_doc, day_name);
 		}
 	}
 });
